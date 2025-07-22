@@ -28,12 +28,12 @@ const Navbar = () => {
             <nav className={`flex h-22 fixed top-0 left-0 border border-b-gray-800 bg-gray-950 w-full flex items-center justify-between px-4 md:px-16 lg:px-24 xl:px-32 transition-all duration-500 z-50 py-4 md:py-6`}>
 
               
-                <h1 className='font-bold cursor-pointer text-2xl bg-clip-text text-transparent bg-gradient-to-tl from-sky-400 via-sky-600 to-indigo-400' onClick={()=>{Navigate('/')}} >Portfolio</h1>
+                <h1 className={`font-bold cursor-pointer text-2xl bg-clip-text text-transparent  ${isScrolled?'bg-gradient-to-tl from-indigo-600 via-sky-600 to-sky-600':'bg-gradient-to-tl from-sky-400 via-sky-600 to-indigo-400'}`} onClick={()=>{Navigate('/')}} >Portfolio</h1>
 
                 
                 <div className="hidden md:flex items-center gap-4 lg:gap-8">
                     {navLinks.map((link, i) => (
-                        <a key={i} href={link.path} className={`group flex flex-col gap-0.5 ${isScrolled ? "text-gray-700" : "text-white"}`}>
+                        <a key={i} href={link.path} className={`group flex flex-col gap-0.5 ${isScrolled ? "text-gray-500" : "text-white"}`}>
                             {link.name}
                             <div className={ `bg-gradient-to-tl from-sky-400 via-sky-600 to-indigo-400 h-0.5 w-0 group-hover:w-full transition-all duration-300`} />
                         </a>
@@ -57,7 +57,7 @@ const Navbar = () => {
                     </button>
 
                     {navLinks.map((link, i) => (
-                        <a key={i} className='text-white' href={link.path} onClick={() => setIsMenuOpen(false)}>
+                        <a key={i} className='text-white text-sm hover:text-sky-400 transition duaration-200' href={link.path} onClick={() => setIsMenuOpen(false)}>
                             {link.name}
                         </a>
                     ))}
