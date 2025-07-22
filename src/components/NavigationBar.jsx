@@ -46,7 +46,7 @@ const Navbar = () => {
                 
                 <div className="flex items-center gap-3 md:hidden">
                     
-                    <Menu  onClick={() => setIsMenuOpen(!isMenuOpen)} className={`h-6 w-6 text-white cursor-pointer ${isScrolled ? "invert" : ""}`} />
+                    <Menu  onClick={() => setIsMenuOpen(!isMenuOpen)} className={`h-6 w-6 text-white cursor-pointer`} />
                 </div>
 
                

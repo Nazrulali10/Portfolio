@@ -2,7 +2,7 @@ import { skilldata } from "../assets/assets";
 
 const Skills = () => {
   return (
-    <div className="flex flex-col pt-22 h-auto w-full bg-gray-950 px-15">
+    <div className="flex flex-col pt-22 h-auto w-full bg-gray-950 px-25">
 
         <p className="mt-10 font-semibold text-2xl flex flex-col w-12 text-white">
             Skills
