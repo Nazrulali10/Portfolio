@@ -13,7 +13,7 @@ const Projects = () => {
       <div key={i} className="flex flex-col w-full h-full rounded-md px-0 md:px-50 py-5 mb-10 mt-3">
         <p className="flex text-white font-semibold text-xl md:text-3xl">{project.name}</p>
 
-        <div className="flex flex-col w-full md:h-auto h-40 md:gap-6 justify-center items-center mt-3 px-0 md:px-30">
+        <div className="flex flex-col w-full md:h-auto h-40 md:gap-6 justify-center items-center mt-3 md:mt-8 px-0 md:px-30">
           <img src={project.images[0]} className=" h-full rounded-md object-contain" alt="r" />
           {/* <div className="flex w-full justify-between">
              <img src={project.images[1]} className="w-60 h-30 rounded-md object-contain " alt="w" />
