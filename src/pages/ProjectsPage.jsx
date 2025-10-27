@@ -51,7 +51,7 @@ const ProjectCard = ({ project }) => {
   
   <button
     onClick={handlePrev}
-    className="absolute left-6 md:hidden md:left-0 bg-black/25 text-white rounded-full p-2 hover:bg-sky-600 transition"
+    className="absolute left-6 md:hidden md:left-0 bg-black/25 text-white rounded-full p-2 active:bg-sky-600 transition"
   >
    <ChevronLeft />
   </button>
@@ -74,7 +74,7 @@ const ProjectCard = ({ project }) => {
  
   <button
     onClick={handleNext}
-    className="absolute md:hidden right-6 md:right-0 bg-black/25 text-white rounded-full p-2 hover:bg-sky-600 transition"
+    className="absolute md:hidden right-6 md:right-0 bg-black/25 text-white rounded-full p-2 active:bg-sky-600 transition"
   >
     <ChevronRight />
   </button>
@@ -93,10 +93,10 @@ const ProjectCard = ({ project }) => {
       </p>
 
       <div className="mt-5 flex flex-col">
-        <p className="text-gray-400 text-xs md:text-sm">
+        {project.name !=="BlogX ✍️" && <p className="text-gray-400 text-xs md:text-sm">
           Note: I’m using Render free tier for Backend, so it may take ~15s to
           start the server.
-        </p>
+        </p>}
         <p className="text-white text-xs md:text-md mt-2">
           Live Demo:{" "}
           <a

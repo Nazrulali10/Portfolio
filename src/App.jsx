@@ -7,7 +7,7 @@ import Contact from './pages/ContactPage'
 
 const App = () =>{
 return(
-  <div className='min-h-screen bg-gray-950'>
+  <div className='min-h-screen bg-gray-950 tiktok-sans'>
   <Navbar/>
   <Routes>
     <Route path='/' element={<Home/>} />
