@@ -57,7 +57,7 @@ const Navbar = () => {
                     </button>
 
                     {navLinks.map((link, i) => (
-                        <a key={i} className='text-white text-sm hover:text-sky-400 transition duaration-200' href={link.path} onClick={() => setIsMenuOpen(false)}>
+                        <a key={i} className='text-white text-md hover:text-sky-400 transition duaration-200' href={link.path} onClick={() => setIsMenuOpen(false)}>
                             {link.name}
                         </a>
                     ))}

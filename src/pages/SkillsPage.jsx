@@ -3,7 +3,7 @@ import { skilldata } from "../assets/assets";
 const Skills = () => {
   return (
     <div className="flex flex-col pt-22 h-auto w-full bg-gray-950  px-3 md:px-25 pb-20">
-      <p className="mt-10 font-semibold text-3xl flex flex-col w-16 text-white">
+      <p className="mt-10 font-semibold text-2xl md:text-3xl flex flex-col w-16 text-white">
         Skills
         <div className="w-full h-0.5 bg-gradient-to-tl from-sky-400 via-sky-600 to-indigo-400 rounded-full mt-2"></div>
       </p>

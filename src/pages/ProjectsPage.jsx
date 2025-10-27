@@ -1,15 +1,18 @@
 
 import { useState } from "react";
 import { projects } from "../assets/assets";
-import { ArrowLeft, ArrowRight } from "lucide-react";
+import { ChevronLeft, ChevronRight } from "lucide-react";
 
 const Projects = () => {
   return (
-    <div className="flex flex-col w-full h-auto pt-22 bg-gray-950 px-2 md:px-15">
-      <p className="mt-10 font-semibold text-3xl flex flex-col w-26 text-white">
+    <div className="flex flex-col w-full h-auto pt-22 bg-gray-950 px-4 md:px-15">
+      <div className="w-full flex justify-center">
+         <p className="mt-10 font-semibold md:text-3xl text-2xl flex flex-col md:w-26 w-20 text-white">
         Projects
         <div className="w-full h-0.5 bg-gradient-to-tl from-sky-400 via-sky-600 to-indigo-400 rounded-full mt-2"></div>
       </p>
+      </div>
+     
 
       {projects
         .slice()
@@ -44,17 +47,23 @@ const ProjectCard = ({ project }) => {
       </p>
 
       
-      <div className=" flex w-full md:gap-4 justify-center items-center mt-3 md:mt-8 px-0 md:px-30">
+      <div className=" flex w-full md:gap-2 justify-center items-center mt-3 md:mt-8 px-0 md:px-30">
   
   <button
     onClick={handlePrev}
-    className=" bg-white text-black rounded-full p-2 hover:bg-sky-600 transition"
+    className="absolute left-6 md:hidden md:left-0 bg-black/25 text-white rounded-full p-2 hover:bg-sky-600 transition"
   >
-    <ArrowLeft/>
+   <ChevronLeft />
+  </button>
+   <button
+    onClick={handlePrev}
+    className="hidden md:block bg-white text-black rounded-full p-2 hover:bg-sky-600 transition"
+  >
+   <ChevronLeft />
   </button>
 
 
-  <div className="w-120 max-w-2xl h-60 md:h-60 flex justify-center items-center ">
+  <div className="w-full max-w-2xl h-60 md:h-60 flex justify-center items-center ">
     <img
       src={project.images[currentImage]}
       alt={project.name}
@@ -65,9 +74,15 @@ const ProjectCard = ({ project }) => {
  
   <button
     onClick={handleNext}
-    className="  bg-white text-black rounded-full p-2 hover:bg-sky-600 transition"
+    className="absolute md:hidden right-6 md:right-0 bg-black/25 text-white rounded-full p-2 hover:bg-sky-600 transition"
   >
-    <ArrowRight />
+    <ChevronRight />
+  </button>
+  <button
+    onClick={handleNext}
+    className="hidden md:block   bg-white text-black rounded-full p-2 hover:bg-sky-600 transition"
+  >
+    <ChevronRight />
   </button>
 </div>
 
