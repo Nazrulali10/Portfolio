@@ -51,7 +51,7 @@ const ProjectCard = ({ project }) => {
   
   <button
     onClick={handlePrev}
-    className="absolute left-6 md:hidden md:left-0 bg-black/25 text-white rounded-full p-2 active:bg-sky-600 transition"
+    className="absolute left-6 md:hidden z-10 md:left-0 bg-black/25 text-white rounded-full p-2 active:bg-sky-600 transition"
   >
    <ChevronLeft />
   </button>
@@ -63,24 +63,35 @@ const ProjectCard = ({ project }) => {
   </button>
 
 
-  <div className="w-full max-w-2xl h-60 md:h-60 flex justify-center items-center ">
-    <img
-      src={project.images[currentImage]}
-      alt={project.name}
-      className="h-full w-full rounded-md object-contain md:object-contain transition-all duration-500"
-    />
+  <div className="overflow-hidden w-full  h-60 md:h-120 flex justify-center items-center rounded-md">
+  <div
+    className="flex transition-transform duration-500 ease-in-out"
+    style={{
+      transform: `translateX(-${currentImage * 100}%)`,
+    }}
+  >
+    {project.images.map((img, index) => (
+      <img
+        key={index}
+        src={img}
+        alt={project.name}
+        className="w-full object-contain rounded-md"
+      />
+    ))}
   </div>
+</div>
+
 
  
   <button
     onClick={handleNext}
-    className="absolute md:hidden right-6 md:right-0 bg-black/25 text-white rounded-full p-2 active:bg-sky-600 transition"
+    className="absolute md:hidden z-10 right-6 md:right-0 bg-black/25 text-white rounded-full p-2 active:bg-sky-600 transition"
   >
     <ChevronRight />
   </button>
   <button
     onClick={handleNext}
-    className="hidden md:block   bg-white text-black rounded-full p-2 hover:bg-sky-600 transition"
+    className="hidden md:block  bg-white text-black rounded-full p-2 hover:bg-sky-600 transition"
   >
     <ChevronRight />
   </button>
