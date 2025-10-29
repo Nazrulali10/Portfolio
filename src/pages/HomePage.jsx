@@ -16,8 +16,8 @@ const Home = () =>{
             <button onClick={()=>{Navigate('/skills')}} className="bg-sky-600 text-sm cursor-pointer rounded-lg md:mt-0 mt-3 w-25  md:w-30 h-10 text-black font-semibold hover:bg-blue-800 transition duration-300">My Skills</button>
             </div>
 
-            <div className="md:w-1/2 w-full h-70 md:h-160 flex justify-center items-center">
-            <img className="flex h-60 md:h-100" src='images/mypic.jpg' alt="mypic"/>
+            <div className="md:w-1/2 w-full h-70 md:h-160 flex justify-center items-center rounded-md">
+            <img className="flex h-60 md:h-100 rounded-full hover:scale-110 transition-transform duration-300" src='images/mypic.jpg' alt="mypic"/>
             </div>
 
         </div>

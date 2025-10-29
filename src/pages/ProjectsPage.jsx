@@ -47,7 +47,7 @@ const ProjectCard = ({ project }) => {
       </p>
 
       
-      <div className=" flex w-full md:gap-2 justify-center items-center mt-3 md:mt-8 px-0 md:px-30">
+      <div className=" flex w-full md:gap-2 justify-center items-center mt-3 md:mt-8 px-0 md:px-10">
   
   <button
     onClick={handlePrev}
@@ -63,7 +63,7 @@ const ProjectCard = ({ project }) => {
   </button>
 
 
-  <div className="overflow-hidden w-full  h-60 md:h-120 flex justify-center items-center rounded-md">
+  <div className="overflow-hidden w-full  h-50 md:h-100 flex justify-center items-center rounded-md ">
   <div
     className="flex transition-transform duration-500 ease-in-out"
     style={{
