@@ -6,8 +6,8 @@ import { ChevronLeft, ChevronRight } from "lucide-react";
 const Projects = () => {
   return (
     <div className="flex flex-col w-full h-auto pt-10 md:pt-22 bg-gray-950 px-4 md:px-15">
-      <div className="w-full flex">
-         <p className="mt-10 font-semibold md:text-3xl text-2xl flex flex-col md:w-26 w-20 text-white">
+      <div className="w-full flex mb-10">
+         <p className="mt-10 font-semibold md:text-3xl text-2xl flex flex-col md:w-26 w-23 text-white">
         Projects
         <div className="w-full h-0.5 bg-gradient-to-tl from-sky-400 via-sky-600 to-indigo-400 rounded-full mt-2"></div>
       </p>
@@ -116,7 +116,7 @@ const ProjectCard = ({ project }) => {
     href={project.link}
     target="_blank"
     rel="noopener noreferrer"
-    className="bg-sky-600 text-black px-4 py-3 rounded-lg text-sm font-semibold"
+    className="bg-sky-600 hover:bg-sky-700 transition-colors duration-300 text-white px-4 py-3 rounded-lg text-sm font-semibold"
   >
     Visit Website
   </a>

@@ -6,7 +6,7 @@ const Home = () => {
  
 
   return (
-    <div className="pt-28 md:pt-22 md:px-40 px-4 md:h-auto h-auto w-full  flex bg-gray-950">
+    <div className="pt-28 md:pt-22 md:px-40 px-6 md:h-auto h-auto w-full  flex bg-gray-950">
       <motion.div
       initial={{ opacity: 0, y: 40 }}
             animate={{ opacity: 1, y: 0 }}
@@ -45,7 +45,7 @@ const Home = () => {
             animate={{ opacity: 1, x: 0 }}
             transition={{ duration: 0.8, ease: "easeInOut" }}
             onClick={() => ScrollTo("skills")}
-            className="bg-sky-600 text-sm cursor-pointer rounded-lg md:mt-0 mt-3 w-25 md:w-30 h-10 text-black font-semibold hover:bg-blue-800 transition duration-300  "
+            className="bg-sky-500 text-sm cursor-pointer rounded-lg md:mt-0 mt-3 w-25 md:w-30 h-10 text-black font-semibold hover:bg-blue-800 transition duration-300  "
           >
             My Skills
           </motion.button>
