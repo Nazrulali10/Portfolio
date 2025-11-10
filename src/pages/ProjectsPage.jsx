@@ -5,8 +5,8 @@ import { ChevronLeft, ChevronRight } from "lucide-react";
 
 const Projects = () => {
   return (
-    <div className="flex flex-col w-full h-auto pt-22 bg-gray-950 px-4 md:px-15">
-      <div className="w-full flex justify-center">
+    <div className="flex flex-col w-full h-auto pt-10 md:pt-22 bg-gray-950 px-4 md:px-15">
+      <div className="w-full flex">
          <p className="mt-10 font-semibold md:text-3xl text-2xl flex flex-col md:w-26 w-20 text-white">
         Projects
         <div className="w-full h-0.5 bg-gradient-to-tl from-sky-400 via-sky-600 to-indigo-400 rounded-full mt-2"></div>
@@ -41,7 +41,7 @@ const ProjectCard = ({ project }) => {
   };
 
   return (
-    <div className="flex flex-col w-full h-full rounded-md px-0 md:px-50 py-5 mb-10 mt-3">
+    <div className="flex flex-col w-full h-full  px-4 md:px-20 py-10 md:py-20 mb-10 mt-10 md:mt-3 rounded-2xl  bg-gray-900">
       <p className="flex text-white font-semibold text-xl md:text-3xl">
         {project.name}
       </p>
@@ -108,17 +108,23 @@ const ProjectCard = ({ project }) => {
           Note: I’m using Render free tier for Backend, so it may take ~15s to
           start the server.
         </p>}
-        <p className="text-white text-xs md:text-md mt-2">
-          Live Demo:{" "}
-          <a
-            className="text-sky-400 text-xs md:text-sm"
-            href={project.link}
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            {project.link}
-          </a>
-        </p>
+       
+          <div className="flex w-full justify-center items-center">
+            
+             <button className="mt-10">
+  <a
+    href={project.link}
+    target="_blank"
+    rel="noopener noreferrer"
+    className="bg-sky-600 text-black px-4 py-3 rounded-lg text-sm font-semibold"
+  >
+    Visit Website
+  </a>
+</button>
+          </div>
+         
+
+       
       </div>
     </div>
   );

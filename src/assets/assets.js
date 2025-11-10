@@ -48,10 +48,10 @@ export const skilldata = [
     }
 ]
 export const navLinks = [
-        { name: 'Home', path: '/' },
-        { name: 'Skills', path: '/skills' },
-        { name: 'Projects', path: '/projects' },
-        { name: 'Contact', path: '/contact' },
+        { name: 'Home', id: 'home' },
+        { name: 'Skills', id: 'skills' },
+        { name: 'Projects', id: 'projects' },
+        { name: 'Contact', id: 'contact' },
     ]
 
 export const projects =[
@@ -83,3 +83,7 @@ export const projects =[
 }
 
 ]
+
+export const ScrollTo =(id)=>{
+    document.getElementById(id).scrollIntoView({behavior:"smooth"})
+}
