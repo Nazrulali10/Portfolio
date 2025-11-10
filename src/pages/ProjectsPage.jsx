@@ -2,6 +2,7 @@
 import { useState } from "react";
 import { projects } from "../assets/assets";
 import { ChevronLeft, ChevronRight } from "lucide-react";
+import { motion } from 'framer-motion'
 
 const Projects = () => {
   return (
@@ -41,7 +42,12 @@ const ProjectCard = ({ project }) => {
   };
 
   return (
-    <div className="flex flex-col w-full h-full  px-4 md:px-20 py-10 md:py-20 mb-10 mt-10 md:mt-3 rounded-2xl  bg-gray-900">
+    <motion.div 
+     initial={{ opacity: 0}}
+            whileInView={{ opacity: 1}}
+            transition={{ duration: 1, ease: "easeOut" }}
+            viewport={{ once: true }} 
+    className="flex flex-col w-full h-full  px-4 md:px-20 py-10 md:py-20 mb-10 mt-10 md:mt-3 rounded-2xl  bg-gray-900">
       <p className="flex text-white font-semibold text-xl md:text-3xl">
         {project.name}
       </p>
@@ -116,7 +122,7 @@ const ProjectCard = ({ project }) => {
     href={project.link}
     target="_blank"
     rel="noopener noreferrer"
-    className="bg-sky-600 hover:bg-sky-700 transition-colors duration-300 text-white px-4 py-3 rounded-lg text-sm font-semibold"
+    className="bg-sky-500 hover:bg-sky-700 transition-colors duration-300 text-white px-4 py-3 rounded-lg text-sm font-semibold"
   >
     Visit Website
   </a>
@@ -126,7 +132,7 @@ const ProjectCard = ({ project }) => {
 
        
       </div>
-    </div>
+    </motion.div>
   );
 };
 

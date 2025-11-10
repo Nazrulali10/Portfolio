@@ -9,7 +9,7 @@ const Skills = () => {
         <div className="w-full h-0.5 bg-gradient-to-tl from-sky-400 via-sky-600 to-indigo-400 rounded-full mt-2"></div>
       </p>
 
-      <div className="grid grid-cols-2 md:grid-cols-3 h-full w-full bg-gray-950 justify-center items-center mt-10 gap-12 px-6 md:px-28">
+      <div className="grid grid-cols-2 md:grid-cols-4 h-full w-full bg-gray-950 justify-center items-center mt-10 md:gap-12 gap-8 px-auto md:px-28">
         {skilldata.map((skill, i) => (
           <FlipCard skill={skill} key={i}/>
         ))}

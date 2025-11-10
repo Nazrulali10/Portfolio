@@ -39,7 +39,7 @@ export default function FlipCard({ skill }) {
             whileInView={{ opacity: 1, y: 0 }}
             transition={{ duration: 1, ease: "easeOut" }}
             viewport={{ once: true }} 
-    className="w-full max-w-[220px] mx-auto">
+    className="md:w-60 w-40 mx-auto">
       <div className="[perspective:1000px]">
         
            <div className="relative h-[260px] w-full transition-transform duration-700
