@@ -107,7 +107,7 @@ const Navbar = () => {
 
   return (
     <nav
-      className={`flex h-22 fixed top-0 left-0 border border-b-gray-800 bg-gray-950 w-full items-center justify-between px-4 md:px-16 lg:px-24 xl:px-32 transition-all duration-500 z-50 py-4 md:py-6`}
+      className={`${isScrolled? 'bg-black/40' : 'bg-gray-950'} flex h-22 fixed top-0 left-0 border border-b-gray-800  w-full items-center justify-between px-4 md:px-16 lg:px-24 xl:px-32 transition-all duration-500 z-50 py-4 md:py-6`}
     >
       <h1
         className={`font-bold cursor-pointer text-2xl bg-clip-text text-transparent  ${
@@ -129,7 +129,7 @@ const Navbar = () => {
             onClick={() => ScrollTo(link.id)}
             key={i}
             className={`group flex flex-col gap-0.5 ${
-              isScrolled ? "text-gray-500" : "text-white"
+              isScrolled ? "text-gray-300" : "text-white"
             }`}
           >
             {link.name}

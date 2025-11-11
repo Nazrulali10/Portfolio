@@ -123,7 +123,7 @@ export const projects =[
    
      {
         name:"Chatly 💬!",
-        images:["/images/p11.png","/images/p22.png","/images/p23.png","/images/p20.png"],
+        images:["/images/cy1.png","/images/cy2.png","/images/cy3.png"],
         description:"A real-time messaging application where users can send and receive messages, update their profile pictures, and see who is currently online. It uses JWT for token-based authentication, with tokens generated at login or sign-up. MongoDB is used as a cloud database to store user and message data, connected via dotenv. The backend is built with Express and Node.js for API routing , asynchronous operations and server handling. Real-time features like messaging and online user tracking are powered by Socket.io. The frontend is developed in React, using Lucide for icons and React Hot Toast for notifications. All user and message images are stored in Cloudinary and linked to the server securely using dotenv.",
         link:"https://chatly-client-zeta.vercel.app"
     

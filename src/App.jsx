@@ -2,13 +2,16 @@ import Navbar from "./components/NavigationBar";
 import Home from "./pages/HomePage";
 import Skills from "./pages/SkillsPage";
 import Projects from "./pages/ProjectsPage";
-import Contact from "./pages/ContactPage";
+import { Toaster } from "react-hot-toast";
+import Email from "./components/Email";
+import Footer from "./components/Footer";
 
 const App = () => {
   return (
     <div className="min-h-screen bg-gray-950 tiktok-sans">
       <Navbar />
       <div>
+        <Toaster/>
         <section id="home">
           <Home />
         </section>
@@ -18,10 +21,11 @@ const App = () => {
         <section id="projects">
           <Projects />
         </section>
-        <section id="contact">
-          <Contact />
+        <section>
+          <Email id="contact"/>
         </section>
       </div>
+      <Footer/>
     </div>
   );
 };
