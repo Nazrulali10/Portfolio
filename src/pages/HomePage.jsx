@@ -30,20 +30,20 @@ const Home = () => {
             Full Stack Developer
           </motion.p>
 
-          <p className=" text-gray-400 text-sm md:text-sm leading-6 md:leading-7">
+          <p className=" text-gray-100 text-sm md:text-sm leading-6 md:leading-7">
             Full-stack developer focused on continuous learning and building
-            impactful products with{" "}
-            <span className="text-white bg-black px-2 py-[2px] font-bold rounded-md text-xs">
+            impactful products with
+           
               Next.js
-            </span>{" "}
-            ,{" "}
-            <span className="text-sky-500 bg-sky-950 px-2 py-[2px] font-bold rounded-md text-xs">
+          
+            ,
+           
               React
-            </span>{" "}
-            , and the{" "}
-            <span className="text-green-500 text-xs bg-green-950 px-2 py-[2px] font-bold rounded-md">
+           
+            , and the
+          
               MERN
-            </span>{" "}
+            
             stack.
           </p>
 
@@ -61,7 +61,7 @@ const Home = () => {
               className=" text-sm cursor-pointer rounded-lg
          h-full w-full
         
-        bg-gradient-to-r from-sky-500 via-blue-600 to-sky-500 text-black font-semibold 
+        bg-gradient-to-r from-sky-400 via-blue-400 to-sky-500 text-black font-semibold 
         bg-[length:300%_300%]
       "
             >
