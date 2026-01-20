@@ -3,12 +3,12 @@ import { motion } from "framer-motion";
 
 const Home = () => {
   return (
-    <div className="pt-20 md:pt-22 md:px-40 px-6 md:h-auto h-auto w-full  flex bg-gray-950">
+    <div className="pt-20 md:pt-22 md:px-40 px-6 md:h-auto h-auto w-full  flex ">
       <motion.div
         initial={{ opacity: 0, y: 40 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 1, ease: "easeOut" }}
-        className="flex md:flex-row w-full flex-col-reverse mb-20 md:mb-0 bg-gray-900 mt-10 px-4 md:px-15 py-10 rounded-2xl overflow-hidden"
+        className="flex md:flex-row w-full flex-col-reverse mb-20 md:mb-0 bg-amber-50 border border-slate-100 mt-10 px-4 md:px-15 py-10 rounded-2xl overflow-hidden shadow-sm"
       >
         <div className="md:w-1/2 w-full flex flex-col justify-center gap-2 md:gap-5">
           <motion.h1
@@ -16,7 +16,7 @@ const Home = () => {
             whileInView={{ opacity: 1, y: 0 }}
             transition={{ duration: 1, ease: "easeOut" }}
             viewport={{ once: true }}
-            className="flex text-white text-xl md:text-4xl font-bold  "
+            className="flex text-gray-900 text-xl md:text-4xl font-bold  "
           >
             Hi, I'm Nazrul Ali
           </motion.h1>
@@ -25,25 +25,25 @@ const Home = () => {
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, ease: "easeInOut" }}
-            className="flex text-sky-500 text-md md:text-lg  "
+            className="flex text-amber-600 text-md md:text-lg font-medium "
           >
             Full Stack Developer
           </motion.p>
 
-          <p className=" text-gray-100 text-sm md:text-sm leading-6 md:leading-7">
+          <p className=" text-gray-600 text-sm md:text-sm leading-6 md:leading-7">
             Full-stack developer focused on continuous learning and building
             impactful products with
-           
-              Next.js
-          
+
+            Next.js
+
             ,
-           
-              React
-           
+
+            React
+
             , and the
-          
-              MERN
-            
+
+            MERN
+
             stack.
           </p>
 
@@ -61,7 +61,7 @@ const Home = () => {
               className=" text-sm cursor-pointer rounded-lg
          h-full w-full
         
-        bg-gradient-to-r from-sky-400 via-blue-400 to-sky-500 text-black font-semibold 
+        bg-gradient-to-r from-amber-300 via-orange-400 to-amber-400 text-white font-semibold 
         bg-[length:300%_300%]
       "
             >

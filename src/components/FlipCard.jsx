@@ -1,7 +1,7 @@
 // export default function FlipCard({skill}) {
 //   return (
 //     <div className="flex justify-center items-center w-36 h-48 md:w-64 md:h-80">
-      
+
 //       {/* Outer wrapper gives perspective */}
 //       <div className="w-full h-full [perspective:1000px]">
 
@@ -36,30 +36,30 @@ export default function FlipCard({ skill }) {
   return (
     <motion.div
       initial={{ opacity: 0, y: 20 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            transition={{ duration: 1, ease: "easeOut" }}
-            viewport={{ once: true }} 
-    className="md:w-60 w-40 mx-auto">
+      whileInView={{ opacity: 1, y: 0 }}
+      transition={{ duration: 1, ease: "easeOut" }}
+      viewport={{ once: true }}
+      className="md:w-60 w-40 mx-auto">
       <div className="[perspective:1000px]">
-        
-           <div className="relative h-[260px] w-full transition-transform duration-700
+
+        <div className="relative h-[260px] w-full transition-transform duration-700
                 [transform-style:preserve-3d]
                 hover:[transform:rotateY(180deg)]
                 cursor-pointer will-change-transform">
 
           {/* Front */}
-          <div className="absolute inset-0 bg-gray-900 border-2 border-sky-500 rounded-2xl shadow-xl 
+          <div className="absolute inset-0 bg-slate-50  rounded-2xl shadow-lg 
                           flex flex-col justify-center items-center gap-4 
                           p-4 [backface-visibility:hidden]">
             <img src={skill.pictureUrl} className="w-16 h-16 object-contain" />
-            <p className="text-white font-semibold text-lg">{skill.name}</p>
+            <p className="text-gray-900 font-semibold text-lg">{skill.name}</p>
           </div>
 
           {/* Back */}
-          <div className="absolute inset-0 bg-gray-800 rounded-2xl shadow-xl 
+          <div className="absolute inset-0 bg-slate-50 rounded-2xl shadow-xl 
                           flex flex-col justify-center items-center p-5 text-center
                           [backface-visibility:hidden] [transform:rotateY(180deg)]">
-            <p className="text-white text-sm leading-relaxed">
+            <p className="text-gray-900 text-sm leading-relaxed">
               {skill.description}
             </p>
           </div>

@@ -32,7 +32,7 @@ const Contact = () => {
   ];
 
   return (
-    <div className="flex flex-col w-full mt-20 h-auto bg-gray-950 px-10">
+    <div className="flex flex-col w-full mt-20 h-auto  px-10">
       <p className="mt-10 w-33 font-semibold text-2xl text-white">
         <strong>Contact Me</strong>
         <div className="w-full h-0.5 bg-gradient-to-tl from-sky-400 via-sky-600 to-indigo-400 rounded-full mt-2"></div>

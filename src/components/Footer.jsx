@@ -1,10 +1,10 @@
-import { 
-  FileUser, 
-  Github, 
-  Linkedin, 
-  Mail, 
-  Phone, 
-  Instagram, 
+import {
+  FileUser,
+  Github,
+  Linkedin,
+  Mail,
+  Phone,
+  Instagram,
   Twitter
 } from "lucide-react";
 
@@ -51,14 +51,14 @@ const Footer = () => {
   ];
 
   return (
-    <footer className="w-full bg-black text-gray-300 pt-14 pb-8 px-6 md:px-14">
-      
+    <footer className="w-full bg-white text-gray-600 pt-14 pb-8 px-6 md:px-14 border-t border-gray-100">
+
       {/* Top: Contact + Social */}
       <div className="grid md:grid-cols-3 gap-10 border-b border-gray-700 pb-10">
 
         {/* Column 1 - Branding */}
         <div>
-          <h2 className="text-2xl font-semibold text-white">Nazrul Ali</h2>
+          <h2 className="text-2xl font-semibold text-gray-900">Nazrul Ali</h2>
           <p className="text-sm text-gray-400 mt-2">
             Full Stack Developer • Creating modern web experiences.
           </p>
@@ -66,15 +66,15 @@ const Footer = () => {
 
         {/* Column 2 - Contact */}
         <div>
-          <h3 className="font-semibold text-gray-300 text-lg">Contact</h3>
+          <h3 className="font-semibold text-gray-900 text-lg">Contact</h3>
           <div className="mt-4 space-y-3">
             {contactInfo.map((item, index) => (
-              <a 
+              <a
                 key={index}
                 href={item.link}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="flex items-center gap-3 hover:text-white transition"
+                className="flex items-center gap-3 hover:text-amber-600 transition"
               >
                 {item.icon}
                 <span className="text-sm">{item.label}</span>
@@ -85,15 +85,15 @@ const Footer = () => {
 
         {/* Column 3 - Social */}
         <div>
-          <h3 className="font-semibold text-gray-300 text-lg">Social</h3>
+          <h3 className="font-semibold text-gray-900 text-lg">Social</h3>
           <div className="mt-4 flex flex-col gap-3">
             {socialLinks.map((item, index) => (
-              <a 
+              <a
                 key={index}
                 href={item.link}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="flex items-center gap-3 hover:text-white transition"
+                className="flex items-center gap-3 hover:text-amber-600 transition"
               >
                 {item.icon}
                 <span className="text-sm">{item.label}</span>
@@ -108,7 +108,7 @@ const Footer = () => {
       <div className="text-center mt-6 text-gray-500 text-sm">
         © Copyrights {new Date().getFullYear()} <strong>Nazrul Ali</strong>. All Rights Reserved.
         <br />
-       
+
       </div>
 
     </footer>

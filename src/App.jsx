@@ -8,10 +8,10 @@ import Footer from "./components/Footer";
 
 const App = () => {
   return (
-    <div className="min-h-screen bg-gray-950 tiktok-sans">
+    <div className="min-h-screen bg-white tiktok-sans">
       <Navbar />
       <div>
-        <Toaster/>
+        <Toaster />
         <section id="home">
           <Home />
         </section>
@@ -22,10 +22,10 @@ const App = () => {
           <Projects />
         </section>
         <section>
-          <Email id="contact"/>
+          <Email id="contact" />
         </section>
       </div>
-      <Footer/>
+      <Footer />
     </div>
   );
 };

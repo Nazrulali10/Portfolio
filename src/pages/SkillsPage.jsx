@@ -3,15 +3,15 @@ import FlipCard from "../components/FlipCard";
 
 const Skills = () => {
   return (
-    <div className="flex flex-col pt-0 md:pt-22 h-auto w-full bg-gray-950  px-3 md:px-25 md:pb-20">
-      <p className="md:mt-10 mt-0 font-semibold text-2xl md:text-3xl flex flex-col w-16 text-white">
+    <div className="flex flex-col pt-0 md:pt-22 h-auto w-full  px-3 md:px-25 md:pb-20">
+      <p className="md:mt-10 mt-0 font-semibold text-2xl md:text-3xl flex flex-col w-16 text-gray-900">
         Skills
-        <div className="w-full h-0.5 bg-gradient-to-tl from-sky-400 via-sky-600 to-indigo-400 rounded-full mt-2"></div>
+        <div className="w-full h-0.5 bg-gradient-to-tl from-amber-400 via-orange-500 to-amber-600 rounded-full mt-2"></div>
       </p>
 
-      <div className="grid grid-cols-2 md:grid-cols-4 h-full w-full bg-gray-950 justify-center items-center mt-10 md:gap-12 gap-8 px-auto md:px-28">
+      <div className="grid grid-cols-2 md:grid-cols-4 h-full w-full bg-white justify-center items-center mt-10 md:gap-12 gap-8 px-auto md:px-28">
         {skilldata.map((skill, i) => (
-          <FlipCard skill={skill} key={i}/>
+          <FlipCard skill={skill} key={i} />
         ))}
       </div>
     </div>
