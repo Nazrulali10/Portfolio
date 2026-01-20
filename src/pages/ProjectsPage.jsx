@@ -44,7 +44,7 @@ const ProjectCard = ({ project }) => {
       whileInView={{ opacity: 1 }}
       transition={{ duration: 1, ease: "easeOut" }}
       viewport={{ once: true }}
-      className="flex flex-col w-full h-full  px-4 md:px-20 py-10 md:py-20 mb-10 mt-10 md:mt-3 rounded-2xl bg-amber-50 border border-slate-100 shadow-sm"
+      className="flex flex-col w-full h-full  px-4 md:px-20 py-10 md:py-20 mb-10 mt-10 md:mt-3 rounded-2xl bg-orange-50 border border-slate-100 shadow-sm"
     >
       <p className="flex text-gray-900 font-semibold text-xl md:text-3xl">
         {project.name}
