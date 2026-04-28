@@ -16,11 +16,12 @@ const Navbar = () => {
   }, []);
 
   return (
-    <nav
-      className={`${isScrolled ? 'bg-white/10 backdrop-blur-md shadow-sm' : 'bg-white'} flex h-22 fixed top-0 left-0 border-b border-gray-100 w-full items-center justify-between px-4 md:px-16 lg:px-24 xl:px-32 transition-all duration-500 z-50 py-4 md:py-6`}
+    <div className="  justify-center flex p-4"> 
+      <nav
+      className={`${isScrolled ? 'bg-white/10 backdrop-blur-md shadow-sm text-rose-500' : 'bg-white'} flex  fixed  border-gray-100 w-[90%] items-center justify-between   transition-all duration-500 z-50 py-4 md:py-6 rounded-2xl shadow-lg md:px-6 px-4`}
     >
       <h1
-        className={`font-bold cursor-pointer text-2xl bg-clip-text text-transparent bg-gradient-to-tl from-amber-500 via-orange-500 to-amber-600`}
+        className={`cursor-pointer text-2xl `}
         onClick={() => {
           ScrollTo("home");
         }}
@@ -34,7 +35,7 @@ const Navbar = () => {
           <button
             onClick={() => ScrollTo(link.id)}
             key={i}
-            className={`group flex flex-col gap-0.5 hover:text-amber-500 font-semibold ${isScrolled ? "text-gray-900 " : "text-gray-600"
+            className={`group flex flex-col gap-0.5 hover:text-rose-500 font-semibold ${isScrolled ? "text-gray-900 " : "text-gray-600"
               }`}
           >
             {link.name}
@@ -46,13 +47,13 @@ const Navbar = () => {
       </div>
 
       {/* Mobile hamburger */}
-      <div className="flex items-center gap-3 md:hidden">
+      <div className="flex items-center gap-3 md:hidden ">
         <button
-          aria-label="Open menu"
+          
           onClick={() => setIsMenuOpen(!isMenuOpen)}
-          className="p-1"
+          className="p-1 "
         >
-          <Menu className="h-6 w-6 text-gray-900" />
+          <Menu className="h-6 w-6 text-rose-500" />
         </button>
       </div>
 
@@ -73,11 +74,11 @@ const Navbar = () => {
           <a
             key={i}
             href="#"
-            className="text-gray-800 text-lg hover:text-amber-600 transition duration-200"
+            className="text-gray-800 text-lg hover:text-rose-500 transition duration-200"
             onClick={(e) => {
-              e.preventDefault();           // keep <a>, but prevent navigation
-              ScrollTo(link.id);            // smooth scroll like desktop
-              setIsMenuOpen(false);         // close the drawer
+              e.preventDefault();          
+              ScrollTo(link.id);           
+              setIsMenuOpen(false);        
             }}
           >
             {link.name}
@@ -85,6 +86,8 @@ const Navbar = () => {
         ))}
       </div>
     </nav>
+    </div>
+    
   );
 };
 

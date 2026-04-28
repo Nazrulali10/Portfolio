@@ -5,6 +5,7 @@ import Projects from "./pages/ProjectsPage";
 import { Toaster } from "react-hot-toast";
 import Email from "./components/Email";
 import Footer from "./components/Footer";
+import About from "./components/About";
 
 const App = () => {
   return (
@@ -14,6 +15,7 @@ const App = () => {
         <Toaster />
         <section id="home">
           <Home />
+          <About/>
         </section>
         <section id="skills">
           <Skills />

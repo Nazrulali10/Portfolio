@@ -69,7 +69,7 @@ export default function Email() {
         <div className="w-full justify-center flex">
           <button
             type="submit"
-            className="bg-amber-600 hover:bg-amber-700 text-white text-sm w-32 px-2 py-2 justify-center rounded-lg shadow-md transition-all active:scale-95"
+            className="bg-rose-500 hover:bg-rose-600 text-white text-sm w-32 px-2 py-2 justify-center rounded-lg shadow-md transition-all active:scale-95"
           >
             Send Message
           </button>
