@@ -35,8 +35,8 @@ const Navbar = () => {
           <button
             onClick={() => ScrollTo(link.id)}
             key={i}
-            className={`group flex flex-col gap-0.5 hover:text-rose-500 font-semibold ${isScrolled ? "text-gray-900 " : "text-gray-600"
-              }`}
+            className={`group flex flex-col gap-0.5 hover:text-rose-500  text-gray-600
+              `}
           >
             {link.name}
             <div

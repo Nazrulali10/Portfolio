@@ -1,11 +1,12 @@
 import Navbar from "./components/NavigationBar";
 import Home from "./pages/HomePage";
-import Skills from "./pages/SkillsPage";
+
 import Projects from "./pages/ProjectsPage";
 import { Toaster } from "react-hot-toast";
 import Email from "./components/Email";
 import Footer from "./components/Footer";
 import About from "./components/About";
+import SkillsPageNew from "./pages/SkillsPageNew";
 
 const App = () => {
   return (
@@ -18,7 +19,7 @@ const App = () => {
           <About/>
         </section>
         <section id="skills">
-          <Skills />
+          <SkillsPageNew />
         </section>
         <section id="projects">
           <Projects />

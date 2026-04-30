@@ -42,7 +42,7 @@ export default function Email() {
           type="text"
           name="name"
           placeholder="Your Name"
-          className="w-full p-3 px-4 rounded-xl bg-white border border-slate-200 text-sm focus:outline-none focus:border focus:border-amber-500 focus:ring-1 focus:ring-amber-500"
+          className="w-full p-3 px-4 rounded-xl bg-white border border-slate-200 text-sm focus:outline-none focus:border focus:border-rose-500 focus:ring-1 focus:ring-rose-500"
           value={form.name}
           onChange={handleChange}
           required
@@ -52,7 +52,7 @@ export default function Email() {
           type="email"
           name="email"
           placeholder="Your Email"
-          className="w-full p-3 rounded-xl px-4 bg-white border border-slate-200 text-sm focus:outline-none focus:border focus:border-amber-500 focus:ring-1 focus:ring-amber-500"
+          className="w-full p-3 rounded-xl px-4 bg-white border border-slate-200 text-sm focus:outline-none focus:border focus:border-rose-500 focus:ring-1 focus:ring-rose-500"
           value={form.email}
           onChange={handleChange}
           required
@@ -61,7 +61,7 @@ export default function Email() {
         <textarea
           name="message"
           placeholder="Your Message"
-          className="w-full p-3 px-4 rounded-xl bg-white border border-slate-200 h-32 text-sm focus:outline-none focus:border focus:border-amber-500 focus:ring-1 focus:ring-amber-500"
+          className="w-full p-3 px-4 rounded-xl bg-white border border-slate-200 h-32 text-sm focus:outline-none focus:border focus:border-rose-500 focus:ring-1 focus:ring-rose-500"
           value={form.message}
           onChange={handleChange}
           required
