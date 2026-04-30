@@ -48,7 +48,7 @@ export const skilldata = [
       "GitHub",
       "Postman",
       "VS Code",
-      "Ant Design",
+      "CI/CD",
     ],
   },
   {
