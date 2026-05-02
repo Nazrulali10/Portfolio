@@ -1,4 +1,4 @@
-import { ScrollTo } from "../assets/assets";
+
 import { motion } from "framer-motion";
 import { ArrowDown } from 'lucide-react';
 

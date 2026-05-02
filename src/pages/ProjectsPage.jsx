@@ -1,7 +1,8 @@
 import { useState } from "react";
 import { projects } from "../assets/assets";
-import { ChevronLeft, ChevronRight } from "lucide-react";
+import { ArrowUpRight, ChevronLeft, ChevronRight } from "lucide-react";
 import { motion } from "framer-motion";
+import { } from 'lucide-react';
 
 const Projects = () => {
   return (
@@ -108,15 +109,25 @@ const ProjectCard = ({ project }) => {
           </p>
         )}
 
-        <div className="flex w-full justify-center items-center">
-          <button className="mt-10">
+        <div className="flex w-full justify-center items-center gap-2">
+          <button className="flex justify-center items-center mt-10 w-36 py-2 bg-rose-500 hover:bg-rose-600 transition-colors duration-300 text-white  rounded-xl text-sm font-semibold shadow-md">
             <a
               href={project.link}
               target="_blank"
               rel="noopener noreferrer"
-              className="bg-rose-500 hover:bg-rose-600 transition-colors duration-300 text-white px-4 py-3 rounded-lg text-sm font-semibold shadow-md"
+              className="flex justify-center items-center gap-1"
             >
-              Visit Website
+              Visit Website <span><ArrowUpRight size={16}/></span>
+            </a>
+          </button>
+          <button className="mt-10 w-32 py-2 bg-rose-500 hover:bg-rose-600 transition-colors duration-300 text-white  rounded-xl text-sm font-semibold shadow-md">
+            <a
+              href={project.github}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="flex justify-center items-center gap-1"
+            >
+              Github <span><ArrowUpRight size={16}/></span>
             </a>
           </button>
         </div>

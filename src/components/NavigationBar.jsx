@@ -1,6 +1,6 @@
 
 import React from "react";
-import { navLinks, ScrollTo } from "../assets/assets";
+import { navLinks } from "../assets/assets";
 import { Menu, X } from "lucide-react";
 
 const Navbar = () => {
