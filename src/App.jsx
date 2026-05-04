@@ -8,7 +8,7 @@ import Footer from "./components/Footer";
 import About from "./components/About";
 import SkillsPageNew from "./pages/SkillsPageNew";
 import React from "react";
-const Projects = React.lazy(()=> import( "./pages/ProjectsPage"))
+// const Projects = React.lazy(()=> import( "./pages/ProjectsPage"))
 const App = () => {
   return (
     <div className="min-h-screen bg-white tiktok-sans">
@@ -23,7 +23,7 @@ const App = () => {
           <SkillsPageNew />
         </section>
         <section id="projects">
-          <Projects />
+          {/* <Projects /> */}
         </section>
         <section>
           <Email id="contact" />
