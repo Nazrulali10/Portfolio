@@ -1,13 +1,14 @@
 import Navbar from "./components/NavigationBar";
 import Home from "./pages/HomePage";
 
-import Projects from "./pages/ProjectsPage";
+// import Projects from "./pages/ProjectsPage";
 import { Toaster } from "react-hot-toast";
 import Email from "./components/Email";
 import Footer from "./components/Footer";
 import About from "./components/About";
 import SkillsPageNew from "./pages/SkillsPageNew";
-
+import React from "react";
+const Projects = React.lazy(()=> import( "./pages/ProjectsPage"))
 const App = () => {
   return (
     <div className="min-h-screen bg-white tiktok-sans">
