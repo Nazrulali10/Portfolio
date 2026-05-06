@@ -43,7 +43,7 @@ const ProjectCard = ({ project }) => {
           <ChevronLeft />
         </button>
 
-        <div className="overflow-hidden w-full  h-60 md:h-140 flex justify-center items-center rounded-xl ">
+        <div className="overflow-hidden w-full  h-60 md:h-134 flex justify-center items-center rounded-xl ">
           <div
             className="flex h-full transition-transform duration-500 ease-in-out"
             style={{
@@ -75,11 +75,13 @@ const ProjectCard = ({ project }) => {
         </button>
       </div>
 
-      <p className="mt-2 md:mt-5 text-gray-600 text-xs md:text-sm">
-        {project.description}
-      </p>
+      <div className="flex flex-col justify-center mt-2 px-4 md:px-10  w-full md:mt-5 text-gray-600 text-xs md:text-sm">
+        {project.description.map((sen,i)=>(
+          <li className=" marker:text-rose-500" key={i}>{sen}</li>
+        ))}
+      </div>
 
-      <div className="mt-5 flex flex-col">
+      <div className="mt-3 md:mt-5 flex flex-col">
         {project.name !== "BlogX ✍️" && (
           <p className="text-gray-500 text-xs md:text-sm">
             Note: I’m using Render free tier for Backend, so it may take ~15s to
@@ -87,8 +89,8 @@ const ProjectCard = ({ project }) => {
           </p>
         )}
 
-        <div className="flex w-full justify-center items-center gap-2">
-          <button className="flex justify-center items-center mt-10 w-36 py-2 bg-rose-500 hover:bg-rose-600 transition-colors duration-300 text-white  rounded-xl text-sm font-semibold shadow-md">
+        <div className="flex w-full justify-center items-center gap-2 mt-4 md:mt-10">
+          <button className="flex justify-center items-center  w-36 py-2 bg-rose-500 hover:bg-rose-600 transition-colors duration-300 text-white  rounded-xl text-sm font-semibold shadow-md">
             <a
               href={project.link}
               target="_blank"
@@ -98,7 +100,7 @@ const ProjectCard = ({ project }) => {
               Visit Website <span><ArrowUpRight size={16}/></span>
             </a>
           </button>
-          <button className="mt-10 w-32 py-2 bg-rose-500 hover:bg-rose-600 transition-colors duration-300 text-white  rounded-xl text-sm font-semibold shadow-md">
+          <button className=" w-32 py-2 bg-rose-500 hover:bg-rose-600 transition-colors duration-300 text-white  rounded-xl text-sm font-semibold shadow-md">
             <a
               href={project.github}
               target="_blank"
