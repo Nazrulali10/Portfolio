@@ -1,6 +1,5 @@
-
 import { motion } from "framer-motion";
-import { ArrowDown } from 'lucide-react';
+import { ArrowDown } from "lucide-react";
 
 const Home = () => {
   return (
@@ -31,58 +30,43 @@ const Home = () => {
             Software Engineer
           </motion.p>
 
-          {/* <p className=" text-gray-600 text-sm md:text-sm leading-6 md:leading-7">
-            Full-stack developer focused on continuous learning and building
-            impactful products with
-
-            Next.js
-
-            ,
-
-            React
-
-            , and the
-
-            MERN
-
-            stack.
-          </p> */}
-
           <motion.div
             initial={{ opacity: 0, x: 20 }}
             animate={{ opacity: 1, x: 0 }}
             transition={{ duration: 0.8, ease: "easeInOut" }}
-           
-            className="  md:mt-0 mt-4   flex  gap-2 "
+            className="  md:mt-0 mt-4   flex  gap-2  "
           >
             <motion.button
-             onClick={() => ScrollTo("skills")}
+              onClick={() => ScrollTo("skills")}
               initial={{ backgroundPosition: "0% 50%" }}
               animate={{ backgroundPosition: "100% 50%" }}
               transition={{ duration: 7, repeat: Infinity, ease: "easeInOut" }}
-              className=" text-sm cursor-pointer rounded-2xl gap-1
+              className=" text-sm cursor-pointer rounded-2xl gap-1 shadow-lg
           py-2 px-3 flex
         
         bg-rose-500 text-white
       "
             >
               My Skills
-             
             </motion.button>
-             <a href="/RESUME.pdf" download> 
-            <motion.button
-              initial={{ backgroundPosition: "0% 50%" }}
-              animate={{ backgroundPosition: "100% 50%" }}
-              transition={{ duration: 7, repeat: Infinity, ease: "easeInOut" }}
-              className=" text-sm cursor-pointer rounded-2xl py-2 px-3 flex gap-1 justify-center items-center
+            <a href="/RESUME.pdf" download>
+              <motion.button
+                initial={{ backgroundPosition: "0% 50%" }}
+                animate={{ backgroundPosition: "100% 50%" }}
+                transition={{
+                  duration: 7,
+                  repeat: Infinity,
+                  ease: "easeInOut",
+                }}
+                className=" text-sm cursor-pointer shadow-lg rounded-2xl py-2 px-3 flex gap-1 justify-center items-center
         
         
         bg-rose-500 text-white
       "
-            >
-              Resume
-              <ArrowDown size={16}  />
-            </motion.button>
+              >
+                Resume
+                <ArrowDown size={16} />
+              </motion.button>
             </a>
           </motion.div>
         </div>
