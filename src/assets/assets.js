@@ -102,9 +102,10 @@ export const navLinks = [
 
 // ]
 
-// export const ScrollTo =(id)=>{
-//     document.getElementById(id).scrollIntoView({behavior:"smooth"})
-// }
+export const ScrollTo =(id)=>{
+    document.getElementById(id).scrollIntoView({behavior:"smooth"})
+}
+
 export const projects = [
   {
     name: "Chatly 💬",
