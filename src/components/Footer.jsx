@@ -33,7 +33,7 @@ const Footer = () => {
     {
       icon: <FileUser className="text-rose-500 w-5 h-5" />,
       label: "Resume",
-      link: "https://drive.google.com/file/d/1Abzc96Eku171NpJGnBJiyKXtme1PdBq9/view",
+      link: "https://drive.google.com/file/d/1PIEVWPdJKqTGz6Squ9wXQZHcqP3ukbqO/view",
     },
   ];
 
