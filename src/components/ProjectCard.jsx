@@ -82,7 +82,7 @@ const ProjectCard = ({ project }) => {
       </div>
 
       <div className="mt-3 md:mt-5 flex flex-col">
-        {project.name !== "BlogX ✍️" && (
+        {(project.name!=="BlogX ✍️" && project.name!=="DevAssist 🤖") && (
           <p className="text-gray-500 text-xs md:text-sm">
             Note: I’m using Render free tier for Backend, so it may take ~15s to
             start the server.

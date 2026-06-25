@@ -146,6 +146,24 @@ export const projects = [
     link: "https://moovygo-client.vercel.app",
     github: "https://github.com/Nazrulali10/MoovyGo",
   },
+ {
+  name: "DevAssist 🤖",
+  images: [
+    "/images/dev1.png",
+    "/images/dev2.png",
+    "/images/dev3.png",
+    "/images/dev4.png",
+  ],
+  description: [
+    "AI-powered developer Assistant",
+    "Static Home Page at build time (SSG)",
+    "Gemini AI Assistant & Resume Analyzer (CSR)",
+    "Tech News powered by NewsAPI (ISR)",
+    "Technology : NextJS, TypeScript, Tailwind CSS & Vercel deployment",
+  ],
+  link: "https://dev-assist-theta.vercel.app/",
+  github: "https://github.com/Nazrulali10/DevAssist",
+},
   {
     name: "BlogX ✍️",
     images: ["/images/bx2.png", "/images/bx1.png", "/images/bx3.png", "/images/bx4.png"],

@@ -50,7 +50,7 @@ const Home = () => {
             >
               My Skills
             </motion.button>
-            <a href="/RESUME.pdf" download>
+            <a href="/Resume.pdf" download>
               <motion.button
                 initial={{ backgroundPosition: "0% 50%" }}
                 animate={{ backgroundPosition: "100% 50%" }}
