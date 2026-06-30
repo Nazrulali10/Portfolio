@@ -14,7 +14,7 @@ Next.js and the MERN stack. Skilled in developing efficient, high-quality web so
 both AI-powered tools and traditional development practices. Looking for an opportunity to
 grow as a developer and contribute to modern, fast-paced engineering teams.</p>
 <div className='flex justify-center '>
-  <div className='h-0.5 rounded-full w-30 bg-white mt-5'></div>
+  <div className='h-0.5 rounded-full w-20 bg-white mt-5'></div>
 </div>
     </motion.div>
   )

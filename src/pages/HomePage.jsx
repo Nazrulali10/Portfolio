@@ -42,7 +42,7 @@ const Home = () => {
               initial={{ backgroundPosition: "0% 50%" }}
               animate={{ backgroundPosition: "100% 50%" }}
               transition={{ duration: 7, repeat: Infinity, ease: "easeInOut" }}
-              className=" text-sm cursor-pointer rounded-2xl gap-1 shadow-lg
+              className=" text-sm cursor-pointer rounded-2xl gap-1 shadow-md
           w-28 px-2 py-2 flex justify-center
         
         bg-rose-500 text-white
@@ -60,7 +60,7 @@ const Home = () => {
                   repeat: Infinity,
                   ease: "easeInOut",
                 }}
-                className=" text-sm cursor-pointer shadow-lg rounded-2xl w-28 px-2 py-2 flex gap-1 justify-center items-center
+                className=" text-sm cursor-pointer shadow-md rounded-2xl w-28 px-2 py-2 flex gap-1 justify-center items-center
         
         
         bg-rose-500 text-white
