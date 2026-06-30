@@ -16,7 +16,7 @@ const Navbar = () => {
   }, []);
 
   return (
-    <div className="  justify-center flex p-4"> 
+    <div className="flex justify-center p-4"> 
       <nav
       className={`${isScrolled ? 'bg-white/10 backdrop-blur-md shadow-sm text-rose-500' : 'bg-white'} flex  fixed  border-gray-100 w-[90%] items-center justify-between   transition-all duration-500 z-50 py-4 md:py-6 rounded-2xl shadow-lg md:px-6 px-4`}
     >
@@ -40,7 +40,7 @@ const Navbar = () => {
           >
             {link.name}
             <div
-              className={`bg-black h-1 w-0 group-hover:w-full rounded-full transition-all duration-300`}
+              className={`bg-gray-400 h-0.5 w-0 group-hover:w-full rounded-full transition-all duration-300`}
             />
           </button>
         ))}

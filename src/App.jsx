@@ -3,11 +3,12 @@ import Home from "./pages/HomePage";
 
 // import Projects from "./pages/ProjectsPage";
 import { Toaster } from "react-hot-toast";
-import Email from "./components/Email";
+import Email from "./components/ProblemSolver";
 import Footer from "./components/Footer";
 import About from "./components/About";
 import SkillsPageNew from "./pages/SkillsPageNew";
 import React from "react";
+import ProblemSolver from "./components/ProblemSolver";
 const Projects = React.lazy(()=> import( "./pages/ProjectsPage"))
 const App = () => {
   return (
@@ -22,11 +23,11 @@ const App = () => {
         <section id="skills">
           <SkillsPageNew />
         </section>
+        <section>
+          <ProblemSolver/>
+        </section>
         <section id="projects">
           <Projects />
-        </section>
-        <section>
-          <Email id="contact" />
         </section>
       </div>
       <Footer />

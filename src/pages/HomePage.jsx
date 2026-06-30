@@ -4,7 +4,7 @@ import { ScrollTo } from "../assets/assets";
 
 const Home = () => {
   return (
-    <div className="pt-10 md:pt-12 md:px-40 px-2 md:h-auto h-auto w-full  flex ">
+    <div className="flex pt-10 md:pt-12 md:px-40 px-2 md:h-auto h-auto w-full  mb-10 ">
       <motion.div
         initial={{ opacity: 0, y: 40 }}
         animate={{ opacity: 1, y: 0 }}
@@ -43,14 +43,15 @@ const Home = () => {
               animate={{ backgroundPosition: "100% 50%" }}
               transition={{ duration: 7, repeat: Infinity, ease: "easeInOut" }}
               className=" text-sm cursor-pointer rounded-2xl gap-1 shadow-lg
-          py-2 px-3 flex
+          w-28 px-2 py-2 flex justify-center
         
         bg-rose-500 text-white
       "
             >
               My Skills
             </motion.button>
-            <a href="/Resume.pdf" download>
+            <a href="https://drive.google.com/file/d/1MJIrYaAl9Yj1e--Je4ZEcB2-RcIdz7PI/view"  target="_blank"
+                rel="noopener noreferrer">
               <motion.button
                 initial={{ backgroundPosition: "0% 50%" }}
                 animate={{ backgroundPosition: "100% 50%" }}
@@ -59,7 +60,7 @@ const Home = () => {
                   repeat: Infinity,
                   ease: "easeInOut",
                 }}
-                className=" text-sm cursor-pointer shadow-lg rounded-2xl py-2 px-3 flex gap-1 justify-center items-center
+                className=" text-sm cursor-pointer shadow-lg rounded-2xl w-28 px-2 py-2 flex gap-1 justify-center items-center
         
         
         bg-rose-500 text-white
