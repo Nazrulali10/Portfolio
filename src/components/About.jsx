@@ -7,7 +7,7 @@ const About = () => {
       whileInView={{ opacity: 1}}
       transition={{ duration: 2, ease: "easeOut" }}
       viewport={{ once: true }}
-     className='flex flex-col items-center gap-2  md:px-18 py-12 bg-rose-400 mb-10 '>
+     className='flex flex-col items-center gap-2  md:px-18 py-12 bg-rose-500 mb-10 '>
         <h1 className="text-3xl md:text-4xl text-white px-4">Who Am I?</h1>
         <p className="text-base px-3 py-2 text-balck text-center">Enthusiastic <span className='font-bold'>Full Stack Developer</span> with hands-on experience in building projects using
 Next.js and the MERN stack. Skilled in developing efficient, high-quality web solutions using
