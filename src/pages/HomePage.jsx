@@ -78,7 +78,7 @@ const Home = () => {
             initial={{ opacity: 0, x: 20 }}
             animate={{ opacity: 1, x: 0 }}
             transition={{ duration: 0.5, ease: "easeInOut" }}
-            className="flex h-48 w-48 object-contain md:h-100 md:w-100 border-2 border-rose-500 rounded-full hover:scale-110 transition-transform duration-300  "
+            className="flex h-52 w-52 object-contain md:h-100 md:w-100 border-2 border-rose-500 rounded-full hover:scale-110 transition-transform duration-300  "
             src="images/mypic.jpg"
             alt="mypic"
           />
