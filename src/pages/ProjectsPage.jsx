@@ -1,7 +1,5 @@
-
 import { projects } from "../assets/assets";
 import ProjectCard from "../components/ProjectCard";
-
 
 const Projects = () => {
   return (
@@ -22,7 +20,5 @@ const Projects = () => {
     </div>
   );
 };
-
-
 
 export default Projects;

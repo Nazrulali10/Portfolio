@@ -1,15 +1,13 @@
-import Navbar from "./components/NavigationBar";
+import Navbar from "./components/NavBar";
 import Home from "./pages/HomePage";
-
-// import Projects from "./pages/ProjectsPage";
 import { Toaster } from "react-hot-toast";
-import Email from "./components/ProblemSolver";
 import Footer from "./components/Footer";
 import About from "./components/About";
 import SkillsPageNew from "./pages/SkillsPageNew";
 import React from "react";
+import NavBar from "./components/NavBar";
 import ProblemSolver from "./components/ProblemSolver";
-const Projects = React.lazy(()=> import( "./pages/ProjectsPage"))
+const Projects = React.lazy(() => import("./pages/ProjectsPage"));
 const App = () => {
   return (
     <div className="min-h-screen bg-white tiktok-sans">
@@ -18,13 +16,13 @@ const App = () => {
         <Toaster />
         <section id="home">
           <Home />
-          <About/>
+          <About />
         </section>
         <section id="skills">
           <SkillsPageNew />
         </section>
         <section>
-          <ProblemSolver/>
+          <ProblemSolver />
         </section>
         <section id="projects">
           <Projects />

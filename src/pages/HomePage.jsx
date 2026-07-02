@@ -25,23 +25,20 @@ const Home = () => {
           <motion.p
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.8, ease: "easeInOut" }}
+            transition={{ duration: 0.5, ease: "easeOut" }}
             className="flex text-gray-900 text-md md:text-lg font-medium animate-pulse duration-300 "
           >
             Software Engineer
           </motion.p>
 
-          <motion.div
-            initial={{ opacity: 0, x: 20 }}
-            animate={{ opacity: 1, x: 0 }}
-            transition={{ duration: 0.8, ease: "easeInOut" }}
+          <div
             className="  md:mt-0 mt-4   flex  gap-2  "
           >
             <motion.button
               onClick={() => ScrollTo("skills")}
-              initial={{ backgroundPosition: "0% 50%" }}
-              animate={{ backgroundPosition: "100% 50%" }}
-              transition={{ duration: 7, repeat: Infinity, ease: "easeInOut" }}
+              initial={{ opacity: 0, x: -20 }}
+              animate={{ opacity: 1, x: 0 }}
+              transition={{ duration: 1, ease: "easeOut" }}
               className=" text-sm cursor-pointer rounded-2xl gap-1 shadow-md
           w-28 px-2 py-2 flex justify-center
         
@@ -50,16 +47,15 @@ const Home = () => {
             >
               My Skills
             </motion.button>
-            <a href="https://drive.google.com/file/d/1MJIrYaAl9Yj1e--Je4ZEcB2-RcIdz7PI/view"  target="_blank"
-                rel="noopener noreferrer">
+            <a
+              href="https://drive.google.com/file/d/1MJIrYaAl9Yj1e--Je4ZEcB2-RcIdz7PI/view"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
               <motion.button
-                initial={{ backgroundPosition: "0% 50%" }}
-                animate={{ backgroundPosition: "100% 50%" }}
-                transition={{
-                  duration: 7,
-                  repeat: Infinity,
-                  ease: "easeInOut",
-                }}
+                initial={{ opacity: 0, x: 20 }}
+              animate={{ opacity: 1, x: 0 }}
+              transition={{ duration: 1, ease: "easeOut" }}
                 className=" text-sm cursor-pointer shadow-md rounded-2xl w-28 px-2 py-2 flex gap-1 justify-center items-center
         
         
@@ -70,14 +66,14 @@ const Home = () => {
                 <ArrowDown size={16} />
               </motion.button>
             </a>
-          </motion.div>
+          </div>
         </div>
 
         <div className="md:w-1/2 w-full h-48 md:h-auto flex justify-center items-center rounded-md mb-4">
           <motion.img
-            initial={{ opacity: 0, x: 20 }}
-            animate={{ opacity: 1, x: 0 }}
-            transition={{ duration: 0.5, ease: "easeInOut" }}
+            initial={{ opacity: 0, y: 20 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.5, ease: "easeOut" }}
             className="flex h-52 w-52 object-contain md:h-100 md:w-100 border-2 border-rose-500 rounded-full hover:scale-110 transition-transform duration-300  "
             src="images/mypic.jpg"
             alt="mypic"

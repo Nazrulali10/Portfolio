@@ -1,12 +1,7 @@
 export const skilldata = [
-   {
+  {
     category: "Launguages 🌐",
-    skills: [
-      "JavaScript",
-      "TypeScript",
-      "Java (Basics)",
-      "SQL"
-    ],
+    skills: ["JavaScript", "TypeScript", "Java (Basics)", "SQL"],
   },
   {
     category: "Frontend 💻",
@@ -34,12 +29,7 @@ export const skilldata = [
   },
   {
     category: "Database 🗄️",
-    skills: [
-      "MongoDB",
-      "MySQL (Basics)",
-      "Schema Design",
-      "Data Modeling",
-    ],
+    skills: ["MongoDB", "MySQL (Basics)", "Schema Design", "Data Modeling"],
   },
   {
     category: "Security 🔐",
@@ -52,34 +42,23 @@ export const skilldata = [
   },
   {
     category: "Tools 🛠️",
-    skills: [
-      "Git",
-      "GitHub",
-      "Postman",
-      "VS Code",
-      "CI/CD",
-    ],
+    skills: ["Git", "GitHub", "Postman", "VS Code", "CI/CD"],
   },
   {
     category: "Deployment",
-    skills: [
-      "Render",
-      "Vercel",
-      "Netlify",
-    ],
+    skills: ["Render", "Vercel", "Netlify"],
   },
 ];
 
 export const navLinks = [
-        { name: 'Home', id: 'home' },
-        { name: 'Skills', id: 'skills' },
-        { name: 'Projects', id: 'projects' }
-    ]
+  { name: "Home", id: "home" },
+  { name: "Skills", id: "skills" },
+  { name: "Projects", id: "projects" },
+];
 
-
-export const ScrollTo =(id)=>{
-    document.getElementById(id).scrollIntoView({behavior:"smooth"})
-}
+export const ScrollTo = (id) => {
+  document.getElementById(id).scrollIntoView({ behavior: "smooth" });
+};
 
 export const projects = [
   {
@@ -97,7 +76,12 @@ export const projects = [
   },
   {
     name: "UniKart 🛍️",
-    images: ["/images/uk1.png", "/images/uk2.png", "/images/uk3.png", "/images/uk4.png"],
+    images: [
+      "/images/uk1.png",
+      "/images/uk2.png",
+      "/images/uk3.png",
+      "/images/uk4.png",
+    ],
     description: [
       "E-commerce platform for students",
       "JWT authentication with bcrypt security",
@@ -110,7 +94,12 @@ export const projects = [
   },
   {
     name: "MoovyGo 🎬",
-    images: ["/images/mt1.png", "/images/mt2.png", "/images/mt3.png", "/images/mt4.png"],
+    images: [
+      "/images/mt1.png",
+      "/images/mt2.png",
+      "/images/mt3.png",
+      "/images/mt4.png",
+    ],
     description: [
       "Movie ticket booking system",
       "Seat selection with availability logic",
@@ -121,27 +110,32 @@ export const projects = [
     link: "https://moovygo-client.vercel.app",
     github: "https://github.com/Nazrulali10/MoovyGo",
   },
- {
-  name: "DevAssist 🤖",
-  images: [
-    "/images/dev1.png",
-    "/images/dev2.png",
-    "/images/dev3.png",
-    "/images/dev4.png",
-  ],
-  description: [
-    "AI-powered developer Assistant",
-    "Static Home Page at build time (SSG)",
-    "Gemini AI Assistant & Resume Analyzer (CSR)",
-    "Tech News powered by NewsAPI (ISR)",
-    "Technology : NextJS, TypeScript, Tailwind CSS & Vercel deployment",
-  ],
-  link: "https://dev-assist-theta.vercel.app/",
-  github: "https://github.com/Nazrulali10/DevAssist",
-},
+  {
+    name: "DevAssist 🤖",
+    images: [
+      "/images/dev1.png",
+      "/images/dev2.png",
+      "/images/dev3.png",
+      "/images/dev4.png",
+    ],
+    description: [
+      "AI-powered developer Assistant",
+      "Static Home Page at build time (SSG)",
+      "Gemini AI Assistant & Resume Analyzer (CSR)",
+      "Tech News powered by NewsAPI (ISR)",
+      "Technology : NextJS, TypeScript, Tailwind CSS & Vercel deployment",
+    ],
+    link: "https://dev-assist-theta.vercel.app/",
+    github: "https://github.com/Nazrulali10/DevAssist",
+  },
   {
     name: "BlogX ✍️",
-    images: ["/images/bx2.png", "/images/bx1.png", "/images/bx3.png", "/images/bx4.png"],
+    images: [
+      "/images/bx2.png",
+      "/images/bx1.png",
+      "/images/bx3.png",
+      "/images/bx4.png",
+    ],
     description: [
       "Full-stack blogging platform with Next.js",
       "NextAuth-based authentication",

@@ -7,13 +7,13 @@ const ProjectCard = ({ project }) => {
 
   const handleNext = () => {
     setCurrentImage((prev) =>
-      prev === project.images.length - 1 ? 0 : prev + 1
+      prev === project.images.length - 1 ? 0 : prev + 1,
     );
   };
 
   const handlePrev = () => {
     setCurrentImage((prev) =>
-      prev === 0 ? project.images.length - 1 : prev - 1
+      prev === 0 ? project.images.length - 1 : prev - 1,
     );
   };
 
@@ -76,13 +76,15 @@ const ProjectCard = ({ project }) => {
       </div>
 
       <div className="flex flex-col justify-center mt-2 px-4 md:px-10  w-full md:mt-5 text-gray-600 text-xs md:text-sm">
-        {project.description.map((sen,i)=>(
-          <li className=" marker:text-rose-500" key={i}>{sen}</li>
+        {project.description.map((sen, i) => (
+          <li className=" marker:text-rose-500" key={i}>
+            {sen}
+          </li>
         ))}
       </div>
 
       <div className="mt-3 md:mt-5 flex flex-col">
-        {(project.name!=="BlogX ✍️" && project.name!=="DevAssist 🤖") && (
+        {project.name !== "BlogX ✍️" && project.name !== "DevAssist 🤖" && (
           <p className="text-gray-500 text-xs md:text-sm">
             Note: I’m using Render free tier for Backend, so it may take ~15s to
             start the server.
@@ -97,7 +99,10 @@ const ProjectCard = ({ project }) => {
               rel="noopener noreferrer"
               className="flex justify-center items-center gap-1"
             >
-              Visit Website <span><ArrowUpRight size={16}/></span>
+              Visit Website{" "}
+              <span>
+                <ArrowUpRight size={16} />
+              </span>
             </a>
           </button>
           <button className=" w-32 py-2 bg-rose-500 hover:bg-rose-600 transition-colors duration-300 text-white  rounded-xl text-sm font-semibold shadow-md">
@@ -107,7 +112,10 @@ const ProjectCard = ({ project }) => {
               rel="noopener noreferrer"
               className="flex justify-center items-center gap-1"
             >
-              Github <span><ArrowUpRight size={16}/></span>
+              Github{" "}
+              <span>
+                <ArrowUpRight size={16} />
+              </span>
             </a>
           </button>
         </div>

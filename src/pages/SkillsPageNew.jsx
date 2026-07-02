@@ -1,7 +1,6 @@
 import { skilldata } from "../assets/assets";
 import SkillCard from "../components/SkillCard";
 
-
 const SkillsPageNew = () => {
   return (
     <div className="flex flex-col pt-0 md:pt-12 h-auto w-full  px-6 md:px-25 md:pb-10">
@@ -13,7 +12,7 @@ const SkillsPageNew = () => {
       <div className="grid grid-cols-1 md:grid-cols-2 h-full w-full bg-white justify-center items-center mt-5 md:gap-12 gap-4 px-auto md:px-18">
         {skilldata.map((item, i) => (
           <SkillCard item={item} key={i} />
-        ))} 
+        ))}
       </div>
     </div>
   );

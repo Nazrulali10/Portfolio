@@ -5,7 +5,7 @@ import {
   Mail,
   Phone,
   Instagram,
-  Twitter
+  Twitter,
 } from "lucide-react";
 
 const Footer = () => {
@@ -52,11 +52,7 @@ const Footer = () => {
 
   return (
     <footer className="w-full bg-white text-gray-600 pt-14 pb-8 px-6 md:px-14 border-t border-gray-100">
-
-     
       <div className="grid md:grid-cols-3 gap-10 border-b border-gray-700 pb-10">
-
-      
         <div>
           <h2 className="text-2xl font-semibold text-gray-900">Nazrul Ali</h2>
           <p className="text-sm text-gray-400 mt-2">
@@ -64,7 +60,6 @@ const Footer = () => {
           </p>
         </div>
 
-      
         <div>
           <h3 className="font-semibold text-gray-900 text-lg">Contact</h3>
           <div className="mt-4 space-y-3">
@@ -83,7 +78,6 @@ const Footer = () => {
           </div>
         </div>
 
-       
         <div>
           <h3 className="font-semibold text-gray-900 text-lg">Social</h3>
           <div className="mt-4 flex flex-col gap-3">
@@ -96,22 +90,19 @@ const Footer = () => {
                 className="flex items-center gap-3  hover:text-rose-500 transition"
               >
                 <div className="">{item.icon}</div>
-                
+
                 <span className="text-sm ">{item.label}</span>
               </a>
             ))}
           </div>
         </div>
-
       </div>
 
-     
       <div className="text-center mt-6 text-gray-500 text-sm">
-        © Copyrights {new Date().getFullYear()} <strong>Nazrul Ali</strong>. All Rights Reserved.
+        © Copyrights {new Date().getFullYear()} <strong>Nazrul Ali</strong>. All
+        Rights Reserved.
         <br />
-
       </div>
-
     </footer>
   );
 };
