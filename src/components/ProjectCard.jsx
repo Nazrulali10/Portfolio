@@ -23,7 +23,7 @@ const ProjectCard = ({ project }) => {
       whileInView={{ opacity: 1 }}
       transition={{ duration: 1, ease: "easeOut" }}
       viewport={{ once: true }}
-      className="flex flex-col w-full h-full  px-4 md:px-20 py-10 md:py-20 mt-10 md:mt-3 rounded-2xl bg-rose-50 border border-slate-100 shadow-sm"
+      className="flex flex-col w-full h-full  p-6 md:px-20  md:py-20 mt-10 md:mt-3 rounded-2xl bg-rose-50 border border-slate-100 shadow-sm"
     >
       <p className="flex text-gray-900 font-semibold text-xl md:text-3xl">
         {project.name}
@@ -43,7 +43,7 @@ const ProjectCard = ({ project }) => {
           <ChevronLeft />
         </button>
 
-        <div className="overflow-hidden w-full  h-60 md:h-134 flex justify-center items-center rounded-xl ">
+        <div className="overflow-hidden md:w-full w-84  h-44 md:h-134 flex justify-center items-center rounded-xl ">
           <div
             className="flex h-full transition-transform duration-500 ease-in-out"
             style={{
@@ -55,7 +55,7 @@ const ProjectCard = ({ project }) => {
                 key={index}
                 src={img}
                 alt={project.name}
-                className="w-full  object-fill rounded-md"
+                className="w-full h-full flex-shrink-0  object-cover rounded-md"
               />
             ))}
           </div>

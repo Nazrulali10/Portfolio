@@ -99,6 +99,7 @@ export const projects = [
       "/images/mt2.png",
       "/images/mt3.png",
       "/images/mt4.png",
+      "/images/mt5.png"
     ],
     description: [
       "Movie ticket booking system",
@@ -117,6 +118,8 @@ export const projects = [
       "/images/dev2.png",
       "/images/dev3.png",
       "/images/dev4.png",
+      "/images/dev5.png",
+      "/images/dev6.png",
     ],
     description: [
       "AI-powered developer Assistant",

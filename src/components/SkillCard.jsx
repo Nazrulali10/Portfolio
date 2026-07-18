@@ -3,8 +3,8 @@ import { motion } from "framer-motion";
 const SkillCard = ({ item }) => {
   return (
     <motion.div
-      initial={{ opacity: 0 }}
-      whileInView={{ opacity: 1 }}
+      initial={{ y: 60 }}
+      animate={{ y: 0 }}
       transition={{ duration: 2, ease: "easeOut" }}
       viewport={{ once: true }}
       className="group flex flex-col justify-center shadow-lg  bg-gray-50 hover:bg-rose-400 rounded-3xl px-12 py-6 gap-2 md:gap-4 hover:scale-105 hover:text-white marker:text-rose-500 hover:marker:text-white duration-300 transition-all"

@@ -18,7 +18,7 @@ export default function ProblemSolver() {
 
         <div className="flex flex-col w-full justify-center text-white gap-3">
           <div className="text-base">
-            I have solved <span className="font-bold">60+</span> coding problems
+            I have solved <span className="font-bold">{import.meta.env.VITE_PROBLEMS_SOLVED}+</span> coding problems
             on LeetCode ( Arrays, Strings, Hash Maps, Stacks, Queues, Two
             Pointers, Sliding Window, Binary Search, and Recursion) helping me
             develop strong analytical thinking and efficient problem-solving
