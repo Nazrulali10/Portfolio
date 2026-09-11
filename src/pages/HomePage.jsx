@@ -48,7 +48,7 @@ const Home = () => {
               My Skills
             </motion.button>
             <a
-              href="https://drive.google.com/file/d/1MJIrYaAl9Yj1e--Je4ZEcB2-RcIdz7PI/view"
+              href={import.meta.env.VITE_RESUME}
               target="_blank"
               rel="noopener noreferrer"
             >
