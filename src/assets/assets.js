@@ -20,6 +20,7 @@ export const skilldata = [
     skills: [
       "Node.js",
       "Express.js",
+      "Spring Boot",
       "Mongoose",
       "RESTful APIs",
       "JWT Authentication",
