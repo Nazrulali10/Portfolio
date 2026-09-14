@@ -1,12 +1,13 @@
 import { motion } from "framer-motion";
 const About = () => {
   return (
+    <div className="w-full flex justify-center">
     <motion.div
       initial={{ opacity: 0 }}
       whileInView={{ opacity: 1 }}
       transition={{ duration: 2, ease: "easeOut" }}
       viewport={{ once: true }}
-      className="flex flex-col items-center gap-2  md:px-18 py-12 bg-gradient-to-br from-rose-400 to-rose-500 mb-10 "
+      className="flex flex-col items-center gap-2  md:px-18 py-12 bg-gradient-to-br from-rose-400 to-rose-500 mb-10 w-full md:w-3xl rounded-2xl"
     >
       <h1 className="text-3xl md:text-4xl text-white px-4">Who Am I?</h1>
       <p className="text-base px-3 py-2 text-gray-900 text-center tracking-wider">
@@ -21,6 +22,7 @@ const About = () => {
         <div className="h-0.5 rounded-full w-20 bg-white mt-5"></div>
       </div>
     </motion.div>
+    </div>
   );
 };
 

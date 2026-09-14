@@ -31,16 +31,14 @@ const Home = () => {
             Software Engineer
           </motion.p>
 
-          <div
-            className="  md:mt-0 mt-4   flex  gap-2  "
-          >
+          <div className="  md:mt-0 mt-4   flex  gap-2  ">
             <motion.button
               onClick={() => ScrollTo("skills")}
               initial={{ opacity: 0, x: -20 }}
               animate={{ opacity: 1, x: 0 }}
               transition={{ duration: 1, ease: "easeOut" }}
               className=" text-sm cursor-pointer rounded-2xl gap-1 shadow-md
-          w-28 px-2 py-2 flex justify-center
+          w-28 px-2 py-2 flex justify-center hover:scale-105 active:scale-105 duration-300
         
         bg-rose-500 text-white
       "
@@ -54,9 +52,9 @@ const Home = () => {
             >
               <motion.button
                 initial={{ opacity: 0, x: 20 }}
-              animate={{ opacity: 1, x: 0 }}
-              transition={{ duration: 1, ease: "easeOut" }}
-                className=" text-sm cursor-pointer shadow-md rounded-2xl w-28 px-2 py-2 flex gap-1 justify-center items-center
+                animate={{ opacity: 1, x: 0 }}
+                transition={{ duration: 1, ease: "easeOut" }}
+                className=" text-sm cursor-pointer shadow-md rounded-2xl w-28 px-2 py-2 flex gap-1 justify-center hover:scale-105 active:scale-105 duration-300 items-center
         
         
         bg-rose-500 text-white
@@ -74,8 +72,8 @@ const Home = () => {
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.5, ease: "easeOut" }}
-            className="flex h-52 w-52 object-contain md:h-100 md:w-100 border-2 border-rose-500 rounded-full hover:scale-110 transition-transform duration-300  "
-            src="images/mypic.jpg"
+            className="flex h-52 w-52 object-cover md:h-100 md:w-100 border-2 border-rose-500 rounded-full hover:scale-110 transition-transform duration-300  "
+            src="images/mypic.png"
             alt="mypic"
           />
         </div>

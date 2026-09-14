@@ -55,7 +55,7 @@ const ProjectCard = ({ project }) => {
                 key={index}
                 src={img}
                 alt={project.name}
-                className="w-full h-full flex-shrink-0  object-cover rounded-md"
+                className="w-full h-full flex-shrink-0  object-contain rounded-md"
               />
             ))}
           </div>

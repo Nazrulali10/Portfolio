@@ -17,7 +17,7 @@ const Navbar = () => {
   return (
     <div className="flex justify-center p-4">
       <nav
-        className={`${isScrolled ? "bg-white/10 backdrop-blur-md shadow-sm text-rose-500" : "bg-white"} flex  fixed  border-gray-100 w-[90%] items-center justify-between   transition-all duration-500 z-50 py-4 md:py-6 rounded-2xl shadow-lg md:px-6 px-4`}
+        className={`${isScrolled ? "bg-white shadow-sm text-rose-500" : "bg-white"} flex  fixed  border-gray-100 w-[90%] items-center justify-between   transition-all duration-500 z-50 py-4 md:py-6 rounded-2xl shadow-lg md:px-6 px-4`}
       >
         <h1
           className={`cursor-pointer text-2xl `}

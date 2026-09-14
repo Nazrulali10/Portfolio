@@ -11,27 +11,30 @@ export default function ProblemSolver() {
       viewport={{ once: true }}
       className=" w-full bg-white md:bg-rose-white flex px-4 md:px-110  justify-center items-center pb-10 mt-15"
     >
-      <div className="flex flex-col gap-2 p-6 md:p-6 rounded-2xl bg-rose-500">
-        <div className="flex text-white md:text-3xl text-2xl justify-center items-center w-full gap-2">
-          Problem Solving <CodeXml size={18} />
+      <div className="flex flex-col gap-2 p-6 md:p-6 rounded-2xl bg-yellow-50">
+        <div className="flex  md:text-3xl text-2xl justify-center items-center w-full gap-2">
+          Problem Solving <CodeXml className="text-rose-500" size={18} />
         </div>
 
-        <div className="flex flex-col w-full justify-center text-white gap-3">
+        <div className="flex flex-col w-full text-gray-500 justify-center  gap-3">
           <div className="text-base">
-            I have solved <span className="font-bold">{import.meta.env.VITE_PROBLEMS_SOLVED}+</span> coding problems
-            on LeetCode ( Arrays, Strings, Hash Maps, Stacks, Queues, Two
-            Pointers, Sliding Window, Binary Search, and Recursion) helping me
-            develop strong analytical thinking and efficient problem-solving
-            skills.
+            I have solved{" "}
+            <span className="font-bold text-rose-500">
+              {import.meta.env.VITE_PROBLEMS_SOLVED}+
+            </span>{" "}
+            coding problems on LeetCode ( Arrays, Strings, Hash Maps, Stacks,
+            Queues, Two Pointers, Sliding Window, Binary Search, and Recursion)
+            helping me develop strong analytical thinking and efficient
+            problem-solving skills.
           </div>
           <button
             onClick={() =>
               window.open("https://leetcode.com/u/4iQkCaeYAe/", "_blank")
             }
-            className="flex items-center gap-1 bg-white hover:text-black hover:border-rose-400  text-rose-400 text-sm w-40 px-2 py-2 justify-center rounded-xl transition-all active:scale-95"
+            className="flex items-center gap-1 bg-rose-500 text-white hover:border-rose-400   text-sm w-40 px-2 py-2 justify-center rounded-xl transition-all active:scale-95 hover:scale-95 cursor-pointer"
           >
             Check My Profile{" "}
-            <span>
+            <span >
               <UserPen size={20} />
             </span>
           </button>
