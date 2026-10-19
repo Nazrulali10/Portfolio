@@ -23,13 +23,13 @@ const ProjectCard = ({ project }) => {
       whileInView={{ opacity: 1 }}
       transition={{ duration: 1, ease: "easeOut" }}
       viewport={{ once: true }}
-      className="flex flex-col w-full h-full  p-6 md:px-20  md:py-20 mt-10 md:mt-3 rounded-2xl bg-rose-50 border border-slate-100 shadow-sm"
+      className="flex flex-col w-full h-full p-4  md:p-6    mt-10 md:mt-3 rounded-2xl bg-rose-50 border border-slate-100 shadow-sm"
     >
       <p className="flex text-gray-900 font-semibold text-xl md:text-3xl">
         {project.name}
       </p>
 
-      <div className=" flex w-full md:gap-2 justify-center items-center mt-3 md:mt-8 px-0 md:px-10">
+      <div className=" flex w-full md:gap-2 justify-center items-center mt-3 md:mt-8 ">
         <button
           onClick={handlePrev}
           className="absolute left-6 md:hidden z-10 md:left-0 bg-black/25 text-white rounded-full p-2 active:bg-rose-500 transition"
@@ -43,7 +43,7 @@ const ProjectCard = ({ project }) => {
           <ChevronLeft />
         </button>
 
-        <div className="overflow-hidden md:w-full w-84  h-44 md:h-134 flex justify-center items-center rounded-xl ">
+        <div className="overflow-hidden  flex justify-center items-center rounded-xl ">
           <div
             className="flex h-full transition-transform duration-500 ease-in-out"
             style={{

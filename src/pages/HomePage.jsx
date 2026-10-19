@@ -73,7 +73,7 @@ const Home = () => {
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.5, ease: "easeOut" }}
             className="flex h-52 w-52 object-cover md:h-100 md:w-100 border-2 border-rose-500 rounded-full hover:scale-110 transition-transform duration-300  "
-            src="images/mypic.png"
+            src="https://res.cloudinary.com/drkeyrpxu/image/upload/f_auto/q_auto/mypic.png"
             alt="mypic"
           />
         </div>

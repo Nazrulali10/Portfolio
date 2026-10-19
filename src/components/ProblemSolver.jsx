@@ -3,20 +3,23 @@ import { motion } from "framer-motion";
 import { CodeXml, UserPen } from "lucide-react";
 export default function ProblemSolver() {
   return (
-    <motion.div
-      id="contact"
+    <div
+      
+      className=" w-full bg-white md:bg-white flex  justify-center items-center pb-10 mt-15 px-3 md:px-6"
+    >
+      <motion.div
       initial={{ opacity: 0, y: 20 }}
       whileInView={{ opacity: 1, y: 0 }}
       transition={{ duration: 1, ease: "easeOut" }}
       viewport={{ once: true }}
-      className=" w-full bg-white md:bg-rose-white flex px-4 md:px-110  justify-center items-center pb-10 mt-15"
-    >
-      <div className="flex flex-col gap-2 p-6 md:p-6 rounded-2xl bg-yellow-50">
+       className="w-full md:w-140 flex flex-col gap-2 p-6 md:p-6 rounded-2xl bg-yellow-50">
         <div className="flex  md:text-3xl text-2xl justify-center items-center w-full gap-2">
           Problem Solving <CodeXml className="text-rose-500" size={18} />
         </div>
-
-        <div className="flex flex-col w-full text-gray-500 justify-center  gap-3">
+        <div className="w-full flex justify-center">
+            <img className="w-full h-full  object-contain rounded-2xl" src="https://res.cloudinary.com/drkeyrpxu/image/upload/f_auto/q_auto/Dark_Mode_Progress_Dashboard.png" alt="psimage"/>
+        </div>
+        <div className="flex flex-col w-full text-gray-500 justify-center text-base  gap-3">
           <div className="text-base">
             I have solved{" "}
             <span className="font-bold text-rose-500">
@@ -39,7 +42,7 @@ export default function ProblemSolver() {
             </span>
           </button>
         </div>
-      </div>
-    </motion.div>
+      </motion.div>
+    </div>
   );
 }
