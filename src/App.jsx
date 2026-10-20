@@ -10,9 +10,9 @@ import ProblemSolver from "./components/ProblemSolver";
 const Projects = React.lazy(() => import("./pages/ProjectsPage"));
 const App = () => {
   return (
-    <div className="min-h-screen bg-white tiktok-sans">
+    <div className="min-h-screen bg-stone-50 tiktok-sans">
       <Navbar />
-      <div>
+      <div className="md:px-20 px-0">
         <Toaster />
         <section id="home">
           <Home />

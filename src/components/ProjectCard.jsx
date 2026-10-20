@@ -23,7 +23,7 @@ const ProjectCard = ({ project }) => {
       whileInView={{ opacity: 1 }}
       transition={{ duration: 1, ease: "easeOut" }}
       viewport={{ once: true }}
-      className="flex flex-col w-full h-full p-4  md:p-6    mt-10 md:mt-3 rounded-2xl bg-rose-50 border border-slate-100 shadow-sm"
+      className="flex flex-col w-full h-full p-4  md:p-6    mt-10 md:mt-3 rounded-2xl bg-emerald-50 border border-slate-100 shadow-sm"
     >
       <p className="flex text-gray-900 font-semibold text-xl md:text-3xl">
         {project.name}
@@ -32,13 +32,13 @@ const ProjectCard = ({ project }) => {
       <div className=" flex w-full md:gap-2 justify-center items-center mt-3 md:mt-8 ">
         <button
           onClick={handlePrev}
-          className="absolute left-6 md:hidden z-10 md:left-0 bg-black/25 text-white rounded-full p-2 active:bg-rose-500 transition"
+          className="absolute left-6 md:hidden z-10 md:left-0 bg-black/25 text-white rounded-full p-2 active:bg-emerald-500 transition"
         >
           <ChevronLeft />
         </button>
         <button
           onClick={handlePrev}
-          className="hidden md:block bg-white text-black rounded-full p-2 hover:bg-rose-500 hover:text-white border border-slate-200 transition"
+          className="hidden md:block bg-white text-black rounded-full p-2 hover:bg-emerald-500 hover:text-white border border-slate-200 transition"
         >
           <ChevronLeft />
         </button>
@@ -63,13 +63,13 @@ const ProjectCard = ({ project }) => {
 
         <button
           onClick={handleNext}
-          className="absolute md:hidden z-10 right-6 md:right-0 bg-black/25 text-white rounded-full p-2 active:bg-rose-500 transition"
+          className="absolute md:hidden z-10 right-6 md:right-0 bg-black/25 text-white rounded-full p-2 active:bg-emerald-500 transition"
         >
           <ChevronRight />
         </button>
         <button
           onClick={handleNext}
-          className="hidden md:block  bg-white text-black rounded-full p-2 hover:bg-rose-500 hover:text-white border border-slate-200 transition"
+          className="hidden md:block  bg-white text-black rounded-full p-2 hover:bg-emerald-500 hover:text-white border border-slate-200 transition"
         >
           <ChevronRight />
         </button>
@@ -77,7 +77,7 @@ const ProjectCard = ({ project }) => {
 
       <div className="flex flex-col justify-center mt-2 px-4 md:px-10  w-full md:mt-5 text-gray-600 text-xs md:text-sm">
         {project.description.map((sen, i) => (
-          <li className=" marker:text-rose-500" key={i}>
+          <li className=" marker:text-emerald-500" key={i}>
             {sen}
           </li>
         ))}
@@ -92,7 +92,7 @@ const ProjectCard = ({ project }) => {
         )}
 
         <div className="flex w-full justify-center items-center gap-2 mt-4 md:mt-10">
-          <button className="flex justify-center items-center  w-36 py-2 bg-rose-500 hover:bg-rose-600 transition-colors duration-300 text-white  rounded-xl text-sm font-semibold shadow-md">
+          <button className="flex justify-center items-center  w-36 py-2 bg-emerald-500 hover:bg-emerald-600 transition-colors duration-300 text-white  rounded-xl text-sm font-semibold shadow-md">
             <a
               href={project.link}
               target="_blank"
@@ -105,7 +105,7 @@ const ProjectCard = ({ project }) => {
               </span>
             </a>
           </button>
-          <button className=" w-32 py-2 bg-rose-500 hover:bg-rose-600 transition-colors duration-300 text-white  rounded-xl text-sm font-semibold shadow-md">
+          <button className=" w-32 py-2 bg-emerald-500 hover:bg-emerald-600 transition-colors duration-300 text-white  rounded-xl text-sm font-semibold shadow-md">
             <a
               href={project.github}
               target="_blank"

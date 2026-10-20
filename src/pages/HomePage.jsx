@@ -9,7 +9,7 @@ const Home = () => {
         initial={{ opacity: 0, y: 40 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 1, ease: "easeOut" }}
-        className="flex  md:flex-row w-full flex-col-reverse  bg-white border  mt-10 px-4 md:px-15 py-5 md:py-10 rounded-2xl overflow-hidden border-gray-200"
+        className="flex  md:flex-row w-full flex-col-reverse  bg-white border  mt-10 px-4 md:px-15 py-5 md:py-10 rounded-2xl overflow-hidden border-gray-200 shadow-lg"
       >
         <div className="md:w-1/2 w-full flex flex-col justify-center items-center  md:gap-5">
           <motion.h1
