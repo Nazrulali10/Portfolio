@@ -13,9 +13,9 @@ const SkillCard = ({ item }) => {
         <h1 className="text-xl ">{item.category}</h1>
       </div>
 
-      <div className="grid grid-cols-2 md:grid-cols-3  gap-3  text-sm">
+      <div className="grid grid-cols-2 md:grid-cols-3  gap-3 mt-2 text-sm">
         {item.skills.map((skill, i) => (
-          <div className="min-w-0 bg-sky-500 font-medium rounded-full flex justify-center px-2 py-1 break-words" key={i}><p>{skill}</p></div>
+          <div className="min-w-0 bg-sky-500 font-medium rounded-full flex justify-center px-2 py-1" key={i}><p>{skill}</p></div>
         ))}
       </div>
     </motion.div>
