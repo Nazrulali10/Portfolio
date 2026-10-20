@@ -13,7 +13,7 @@ const Footer = () => {
     {
       icon: <Linkedin className="text-rose-500 w-5 h-5" />,
       label: "LinkedIn",
-      link: "https://www.linkedin.com/in/nazrul-ali-n-3b585b333",
+      link: "https://www.linkedin.com/in/nazrulali",
     },
     {
       icon: <Github className="text-rose-500 w-5 h-5" />,
@@ -23,12 +23,12 @@ const Footer = () => {
     {
       icon: <Instagram className="text-rose-500 w-5 h-5" />,
       label: "Instagram",
-      link: "https://www.instagram.com/iamnaxrul?igsh=amw0dXluaXdjYzB1",
+      link: "https://www.instagram.com/imnasruln",
     },
     {
       icon: <Twitter className="text-rose-500 w-5 h-5" />,
       label: "X",
-      link: "https://x.com/iamnaxrul?t=gA8FoIfSHP-XldlVK3jr2w&s=09",
+      link: "https://x.com/iamnaxrul",
     },
     {
       icon: <FileUser className="text-rose-500 w-5 h-5" />,

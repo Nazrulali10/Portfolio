@@ -21,14 +21,14 @@ export const skilldata = [
       "Spring Boot",
       "Mongoose",
       "RESTful APIs",
-      "JWT Authentication",
+      "JWT",
       "Socket.io",
       "Spring data JPA",
     ],
   },
   {
     category: "Database 🗄️",
-    skills: ["NoSQL ( MongoDB )", "MySQL", "Schema Design", "Data Modeling"],
+    skills: ["MongoDB", "MySQL", "Schema Design", "Data Modeling"],
   },
   {
     category: "Totals & Deployment🛠️",
