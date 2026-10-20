@@ -3,8 +3,8 @@ import SkillCard from "../components/SkillCard";
 
 const SkillsPageNew = () => {
   return (
-    <div className="flex flex-col bg-indigo-600 w-full py-15 px-3 md:px-12">
-      <div className=" text-2xl md:text-3xl flex flex-col w-16 text-white">
+    <div className="flex flex-col bg-indigo-500 w-full py-15 px-3 md:px-12">
+      <div className=" text-2xl px-3 md:text-3xl flex flex-col w-22 text-white">
         Skills
         <div className="w-[75%] h-0.5 bg-white rounded-full mt-2"></div>
       </div>

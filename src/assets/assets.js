@@ -10,9 +10,7 @@ export const skilldata = [
       "Next.js",
       "Tailwind CSS",
       "HTML5",
-      "CSS3",
-      "Framer Motion",
-      "Context API",
+      "CSS3"
     ],
   },
   {
@@ -25,7 +23,7 @@ export const skilldata = [
       "RESTful APIs",
       "JWT Authentication",
       "Socket.io",
-      "Error Handling",
+      "Spring data JPA",
     ],
   },
   {
@@ -33,21 +31,12 @@ export const skilldata = [
     skills: ["NoSQL ( MongoDB )", "MySQL", "Schema Design", "Data Modeling"],
   },
   {
-    category: "Security 🔐",
-    skills: [
-      "JWT",
-      "Cookie-based Authentication",
-      "Access Control",
-      "NextAuth.js",
-    ],
+    category: "Totals & Deployment🛠️",
+    skills: ["Docker","Git", "GitHub", "Postman", "VS Code", "IntelliJ IDEA","Render", "Vercel"],
   },
   {
-    category: "Tools and Concepts🛠️",
-    skills: ["Git", "GitHub", "Postman", "VS Code", "CI/CD", "OOP", "SDLC"],
-  },
-  {
-    category: "Deployment",
-    skills: ["Render", "Vercel", "Netlify"],
+    category: "Concepts",
+    skills: [ "OOP", "SDLC","Cybersecurity","Networking"],
   },
 ];
 
