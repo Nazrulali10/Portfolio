@@ -1,7 +1,7 @@
 "use client";
 import { motion } from "framer-motion";
 import { CodeXml, UserPen } from "lucide-react";
-export default function ProblemSolver() {
+export default function ProblemSolvingSection() {
   return (
     <div
       

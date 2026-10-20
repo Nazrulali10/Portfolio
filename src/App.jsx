@@ -1,13 +1,11 @@
 import Navbar from "./components/NavBar";
-import Home from "./pages/HomePage";
 import { Toaster } from "react-hot-toast";
 import Footer from "./components/Footer";
 import About from "./components/About";
-import SkillsPageNew from "./pages/SkillsPageNew";
-import React from "react";
-import NavBar from "./components/NavBar";
-import ProblemSolver from "./components/ProblemSolver";
-const Projects = React.lazy(() => import("./pages/ProjectsPage"));
+import SkillSection from "./sections/SkillSection";
+import ProjectSection from "./sections/ProjectSection";
+import HomeSection from "./sections/HomeSection";
+import ProblemSolvingSection from "./sections/ProblemSolvingSection";
 const App = () => {
   return (
     <div className="min-h-screen bg-stone-50 tiktok-sans">
@@ -15,17 +13,17 @@ const App = () => {
       <div className="md:px-20 px-0">
         <Toaster />
         <section id="home">
-          <Home />
+          <HomeSection />
           <About />
         </section>
         <section id="skills">
-          <SkillsPageNew />
+          <SkillSection />
         </section>
         <section>
-          <ProblemSolver />
+          <ProblemSolvingSection />
         </section>
         <section id="projects">
-          <Projects />
+          <ProjectSection />
         </section>
       </div>
       <Footer />

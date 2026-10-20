@@ -35,7 +35,7 @@ export const skilldata = [
     skills: ["Docker","Git", "GitHub", "Postman", "VS Code", "IntelliJ IDEA","Render", "Vercel"],
   },
   {
-    category: "Concepts",
+    category: "Concepts 📖",
     skills: [ "OOP", "SDLC","Cybersecurity","Networking"],
   },
 ];
@@ -117,6 +117,17 @@ export const projects = [
     ],
     link: "https://dev-assist-theta.vercel.app/",
     github: "https://github.com/Nazrulali10/DevAssist",
+  },
+  {
+    name: "QuickFix 🛠️",
+    images: ["https://res.cloudinary.com/drkeyrpxu/image/upload/c_auto,h_1400/f_auto/q_auto/qf1.png", "https://res.cloudinary.com/drkeyrpxu/image/upload/c_auto,h_1400/f_auto/q_auto/qf2.png", "https://res.cloudinary.com/drkeyrpxu/image/upload/c_auto,h_1400/f_auto/q_auto/qf4.png","https://res.cloudinary.com/drkeyrpxu/image/upload/c_auto,h_1400/f_auto/q_auto/qf3.png","https://res.cloudinary.com/drkeyrpxu/image/upload/c_auto,h_1400/f_auto/q_auto/qf5.png"],
+    description: [
+      "Built a full-stack service management application where customers can create and cancel service requests,technicians can manage request statuses, and admins can manage technicians and monitor service requests",
+      "Implemented JWT-based authentication and role-based authorization using Spring Security, BCrypt password hashing, and HTTP-only cookies to secure customer, technician, and admin APIs.",
+      "Developed REST APIs using Spring Boot, Spring Data JPA, and MySQL to handle service requests, technician management, and request status updates.",
+    ],
+    link: "https://quick-fix-frontend-green.vercel.app",
+    github: "https://github.com/Nazrulali10/QuickFix",
   },
    {
     name: "MoovyGo 🎬",

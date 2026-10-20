@@ -2,7 +2,7 @@ import { motion } from "framer-motion";
 import { ArrowDown } from "lucide-react";
 import { ScrollTo } from "../assets/assets";
 
-const Home = () => {
+const HomeSection = () => {
   return (
     <div className="flex pt-10 md:pt-12 md:px-40 px-2 md:h-auto h-auto w-full  mb-10 ">
       <motion.div
@@ -82,4 +82,4 @@ const Home = () => {
   );
 };
 
-export default Home;
+export default HomeSection;
