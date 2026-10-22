@@ -1,10 +1,13 @@
+import { BookOpen, Database, Globe, Laptop, Settings, Wrench } from "lucide-react";
+
 export const skilldata = [
   {
-    category: "Launguages 🌐",
+    category: "Launguages",
     skills: ["JavaScript", "TypeScript", "Java", "SQL"],
+    icon:<Globe />
   },
   {
-    category: "Frontend 💻",
+    category: "Frontend",
     skills: [
       "React.js",
       "Next.js",
@@ -12,9 +15,10 @@ export const skilldata = [
       "HTML5",
       "CSS3"
     ],
+    icon:<Laptop />
   },
   {
-    category: "Backend ⚙️",
+    category: "Backend",
     skills: [
       "Node.js",
       "Express.js",
@@ -25,18 +29,22 @@ export const skilldata = [
       "Socket.io",
       "Spring data JPA",
     ],
+    icon:<Settings />
   },
   {
-    category: "Database 🗄️",
+    category: "Database",
     skills: ["MongoDB", "MySQL", "Schema Design", "Data Modeling"],
+    icon:<Database />
   },
   {
-    category: "Totals & Deployment🛠️",
+    category: "Tools & Deployment",
     skills: ["Docker","Git", "GitHub", "Postman", "VS Code", "IntelliJ IDEA","Render", "Vercel"],
+    icon:<Wrench />
   },
   {
-    category: "Concepts 📖",
+    category: "Concepts",
     skills: [ "OOP", "SDLC","Cybersecurity","Networking"],
+    icon:<BookOpen />
   },
 ];
 
